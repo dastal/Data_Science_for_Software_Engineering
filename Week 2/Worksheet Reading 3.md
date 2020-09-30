@@ -44,5 +44,6 @@ Regarding effect sizes, they reported Vargha-Delaney’s Â12, a non-parametric 
 
 Testing is configured as a crucial factor to the success of the build, but exceptions are made on an individual level. They found that testing on the CI is highly dependent on the language, and that a dynamically typed language like Ruby has up to ten times more tests and leads to a higher build breakage rate due to tests than a statically typed language like Java.
 
-8. What did you **not understand** of this paper?
+### What did you **not understand** of this paper?
+
 Why did they exactly pick ruby projects? Python is also dynamically typed and it is used much more than Ruby...
