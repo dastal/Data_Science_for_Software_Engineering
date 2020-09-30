@@ -1,7 +1,5 @@
 # Paper reading worksheet
 
-This document contains the questions to be answered when reading the papers that are going to be discussed in a discussion session of the course.
-
 ## Questions
 
 ### What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.)_
