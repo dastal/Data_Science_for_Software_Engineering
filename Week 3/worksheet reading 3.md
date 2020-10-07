@@ -34,9 +34,9 @@ They analyzed descriptive statistics of the number of developers who contribute 
 
 ### What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
-
+Their results suggest that future approximations of code ownership should take code review activity into consideration in order to more accurately model the contributions that developers have made to evolve software systems and to identify defect-prone modules.
 
 ### What did you **not understand** of this paper?
 
-
+Nothing, it was very understandable.
 
