@@ -4,11 +4,11 @@
 
 ### What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.)_
 
-
+They wan to revisit the relationship between the code ownership and software quality.
 
 ### Why is this paper **important**?
 
-
+They were able to show that code reviewing activity provides an important perspective that contributes to the code ownership concept. Future approximations of code ownership should take code reviewing activity into account in order to more accurately model the contributions that developers make to evolve modern software systems.
 
 ### What is the **methodology** used to answer the research question(s) or reach the goal?
 
