@@ -16,7 +16,7 @@ They surveyed a set of ative and productive developers on GitHub, then they anal
 
 ### What **data** does the paper use?
 
-
+A set of active and productive developers with a timespan of five years from the first commit to the last commit and with at least 500 commits in 10 disticnt, non-forked repositories, the commits were done between 2008 and 2018. 20000 of those developers were surveyed with a set of 45 questions to be answered. 456 responses werwe obtained.
 
 ### If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
