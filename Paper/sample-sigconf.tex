@@ -23,7 +23,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{The Name of the Title is Hope}
+\title{Reproduction of "Predicting the Severity of a Reported Bug"}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -60,17 +60,15 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  Use a structured abstract format as in the following:
 
-\textbf{Background.} Describe the context of your study/approach, mentioning very briefly previous studies/solutions. This should not take more than two sentences.
+\textbf{Background.} Bug fixing is a fundamental part of software maintenance. Bugs have different levels of severity according to their threat to the system and urgency to fixing.
 
-\textbf{Aim.} Explain in one sentence the overarching purpose of your study/approach.
+\textbf{Aim.} The aim is to be able to have models which are able to identify the severity of bug reports.
 
-\textbf{Method.} Briefly describe the type of method that you employ to conduct the study and its main characteristics (e.g., origin and number of systems, type of participants and their experience). Also mention the empirical measurements you plan to do for your study.
+\textbf{Method.} After identifying the system, bug reports will be extracted from bugzilla including the severity of the bug. This data is used to train two classifiers: SGDClassifier and Multinomial Naïve Bayes. The following measurements are used to identify the quality of the model: precision, recall and f-measures.
 
-\textbf{Conclusion.} Summarize the implications that conducting your study can have for research as well as practice in software engineering.
+\textbf{Conclusion.} This study will show if it is possible to generate models, which can do the classification of bug reports automatically with certainty. This can help software engineers in practice to classify their bug reports and focus on the most urgent.
 \end{abstract}
-
 
 
 %%
