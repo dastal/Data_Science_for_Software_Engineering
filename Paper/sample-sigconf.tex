@@ -65,7 +65,7 @@
 
 \textbf{Aim.} The aim is to be able to have models which are able to identify the severity of bug reports.
 
-\textbf{Method.} After identifying the system, bug reports will be extracted from bugzilla including the severity of the bug. This data is used to train two classifiers: SGDClassifier and Multinomial Naïve Bayes. The following measurements are used to identify the quality of the model: precision, recall and f-measures.
+\textbf{Method.} After identifying the system, bug reports will be extracted from bugzilla including the severity of the bug. This data is used to train two classifiers: SGDClassifier and Multinomial Na{\"\i}ve Bayes. The following measurements are used to identify the quality of the model: precision, recall and f-measures.
 
 \textbf{Conclusion.} This study will show if it is possible to generate models, which can do the classification of bug reports automatically with certainty. This can help software engineers in practice to classify their bug reports and focus on the most urgent.
 \end{abstract}
@@ -77,9 +77,9 @@
 \maketitle
 
 \section{Introduction}
-The introduction should give a general description of the problem domain. Moreover it should introduce the ``Problem'' providing background, such as the source of the problem, the negative consequences of the problem, and the potential benefits to solving the problem. In other words: why is the problem important? Or why is this research question important to answer?
+Bug reports represent a fundamental part of software maintenance by documenting the malfunction of a software part. A large number of bug reports by users and developers are collected on a daily basis in bug tracking systems like Bugzilla. These reports are then manually prioritized according to their severity and classified into 6 groups, ranging from a request to enhancement to a critical level resulting in crashes, loss of data or severe memory leak. The level of severity indicates the impact of the bug on the successful execution of a software system. 
+However, the manual assignment of severity level to a bug reports take time and resources. In combination with the increase of daily bug reports the classification introduces a set of challenges such as misclassification of severity or the increase of cost. The ability of automated classification of bug reports by a tool reduce errors in classification and manual work as well as enhance the software quality.
 
-Keep in mind that, if you are creating a research proposal, the scope of the work should correspond to that of a 6-month master thesis. So plan for resources and time accordingly.
 
 \section{Related work and Background}
 
