@@ -1,5 +1,42 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sample-sigconf.aux
 The style file: ACM-Reference-Format.bst
-I found no \citation commands---while reading file sample-sigconf.aux
 Database file #1: sample-base.bib
-(There was 1 error message)
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2802 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2802 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2802 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2802 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2802 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2802 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2863 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2863 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2863 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2863 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2961 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2961 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, Q.D. Soetens, T. Verdonck" for entry LamkanfiMiningAlgo
+while executing---line 2961 of file ACM-Reference-Format.bst
+Warning--no number and no volume in LamkanfiMiningAlgo
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2961 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2961 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "A. Lamkanfi, S. Demeyer, S. Giger, B. Goethals" for entry ourPaper
+while executing---line 2961 of file ACM-Reference-Format.bst
+Warning--no number and no volume in ourPaper
+Warning--no number and no volume in KanwalOMSVM
+Warning--unrecognized DOI value [ICOSST]
+Warning--no number and no volume in ChaturvediBugSeverity
+Warning--no number and no volume in TianDrone
+(There were 16 error messages)

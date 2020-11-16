@@ -77,51 +77,14 @@
 \maketitle
 
 \section{Introduction}
-Bug reports represent a fundamental part of software maintenance by documenting the malfunction of a software part. A large number of bug reports by users and developers are collected on a daily basis in bug tracking systems like Bugzilla. These reports are then manually prioritized according to their severity and classified into 6 groups, ranging from a request to enhancement to a critical level resulting in crashes, loss of data or severe memory leak. The level of severity indicates the impact of the bug on the successful execution of a software system. 
-However, the manual assignment of severity level to a bug reports take time and resources. In combination with the increase of daily bug reports the classification introduces a set of challenges such as misclassification of severity or the increase of cost. The ability of automated classification of bug reports by a tool reduce errors in classification and manual work as well as enhance the software quality.
+Bug reports represent a fundamental part of software maintenance by documenting the malfunction of a software part. A large number of bug reports by users and developers are collected on a daily basis in bug tracking systems like Bugzilla. These reports are then manually prioritized according to their severity and classified into 6 groups, ranging from a request to enhancement to a critical level resulting in crashes, loss of data or severe memory leak. The level of severity indicates the impact of the bug on the successful execution of a software system.
 
+However, the manual assignment of the severity level to a bug report takes time and resources. In combination with the increase of daily bug reports the classification introduces a set of challenges such as misclassification of severity or the increase of cost. The ability of the automated severity prediction of bug reports by a tool reduces errors in misclassification and manual work as well as enhance the software quality.
 
-\section{Related work and Background}
+In order to automate the severity predication of bug reports, different classification and information retrieval techniques based on textual descriptions have been used previously. Techniques range from Nearest Neighbours \cite{TianDrone} \cite{LamkanfiMiningAlgo} \cite{ChaturvediBugSeverity}, Na{\"\i}ve Bayes \cite{LamkanfiMiningAlgo} \cite{ChaturvediBugSeverity} to Support Vector Machines \cite{KanwalOMSVM} \cite{LamkanfiMiningAlgo} \cite{ChaturvediBugSeverity}. While some work focuses on automatically analyzing the text of past bug reports and the recommendation of severity labels \cite{TianDrone} \cite{LamkanfiMiningAlgo} \cite{ChaturvediBugSeverity} other work creates a classification-based approach to create a bug priority recommender \cite{KanwalOMSVM}.
 
-Any studies, tools, technologies that you rely on for your study and enrich your study are described here. This is \textbf{not} where you describe your solution. This is only where you give an overview of the most-important studies (and technologies you may use) that have been published before. If you are proposing a new feature location technique that combines Latent Semantic Indexing with Program Slicing, you should give a brief description of these in the background section. If you are proposing a study on evaluating social networks of developers, this is where you describe previous studies that did similar things. The background is \textbf{not} for rehashing the problem; it is for the supporting technologies/methods of the solution/study.
+For this project, we intend to conduct a reproduction of the paper "Predicting the severity of a reported bug" \cite{ourPaper} by Lamkanfy et al. It was originally written in 2010, which we consider as too old for such a current topic. 
 
-
-\section{Methodology}
-
-In this section, you define the research questions that structure your study/solution.
-
-\subsection{Research questions}
-
-Write here the research questions and motivate why you pick specifically these ones. Explain and motivate each research question separately.
-
-\subsection{Research method}
-
-Here you describe exactly how you plan to answer each research question or, in case you're proposing a new solution, you start explaining your brand new, enlightened solution. What, precisely, are the inputs and outputs of your solution/study? What parameters will you use? What design decisions are you making and what is the rationale behind each decision? what gold sets do you use? Will you have human evaluators? If so, how many and who were they? What metrics are you planning to use?  Etc.
-
-This is also a great place for a concrete example. Pick out one example and explain it thoroughly. Show exactly what are the input and output of your approach.
-
-\subsection{Limitations/Threats to Validity}
-
-End the methodology section with a subsection called ``Threats to Validity'' or ``Limitations'' (depending on the research method you use) to let everyone know what you perceive as the weaknesses of your study, what you try to do about those weaknesses, and how different studies can tackle them.
-
-\section{Conclusions}
-Summarize your idea and explain what is the expected impact of your research proposal.
-
-
-
-\section{Acknowledgments}
-
-Thank who needs to be thanked.
-
-
-%%
-%% The acknowledgments section is defined using the "acks" environment
-%% (and NOT an unnumbered section). This ensures the proper
-%% identification of the section in the article metadata, and the
-%% consistent spelling of the heading.
-\begin{acks}
-To Robert, for the bagels and explaining CMYK and color spaces.
-\end{acks}
 
 %%
 %% The next two lines define the bibliography style to be used, and
@@ -133,35 +96,8 @@ To Robert, for the bagels and explaining CMYK and color spaces.
 %% If your work has an appendix, this is the place to put it.
 \appendix
 
-\section{An appendix}
 
-\subsection{Part One}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-malesuada, quam in pulvinar varius, metus nunc fermentum urna, id
-sollicitudin purus odio sit amet enim. Aliquam ullamcorper eu ipsum
-vel mollis. Curabitur quis dictum nisl. Phasellus vel semper risus, et
-lacinia dolor. Integer ultricies commodo sem nec semper.
-
-\subsection{Part Two}
-
-Etiam commodo feugiat nisl pulvinar pellentesque. Etiam auctor sodales
-ligula, non varius nibh pulvinar semper. Suspendisse nec lectus non
-ipsum convallis congue hendrerit vitae sapien. Donec at laoreet
-eros. Vivamus non purus placerat, scelerisque diam eu, cursus
-ante. Etiam aliquam tortor auctor efficitur mattis.
-
-\section{Online Resources}
-
-Nam id fermentum dui. Suspendisse sagittis tortor a nulla mollis, in
-pulvinar ex pretium. Sed interdum orci quis metus euismod, et sagittis
-enim maximus. Vestibulum gravida massa ut felis suscipit
-congue. Quisque mattis elit a risus ultrices commodo venenatis eget
-dui. Etiam sagittis eleifend elementum.
-
-Nam interdum magna at lectus dignissim, ac dignissim lorem
-rhoncus. Maecenas eu arcu ac neque placerat aliquam. Nunc pulvinar
-massa et mattis lacinia.
 
 \end{document}
 \endinput
