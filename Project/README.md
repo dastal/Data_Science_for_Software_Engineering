@@ -69,3 +69,9 @@ Since there are more than two commas in one line we needed to make sure that the
 | training_list.csv | List with data for the training phase of the ML Algorithm |
 | testing_list.csv | List with data for the testing phase of the ML Algorithm |
 | bug_list.csv | List with data for the first test |
+
+## Execution
+
+## Results
+
+## Limitations
