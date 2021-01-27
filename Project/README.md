@@ -42,7 +42,7 @@ The amount of data items found per type* was according to the following table:
 | N/A | 1000 | 200 | 1509 |
 | Total | 13045 | 1406 | 54726 |
 
-(* Date: 2021-01-27)
+(* All lists were retrieved on 2020-12-03. List "blocker" was renewed on 2021-01-27)
 
 ### Preparing the Data
 The data was prepared as follows:
