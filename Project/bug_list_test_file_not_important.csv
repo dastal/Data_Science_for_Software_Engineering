@@ -1,0 +1,200 @@
+122001,Permaorange on beta after merge of Gecko 43: browser_cmd_commands.js | html output for console close - Got Error: Invalid Command: ''.  expected,blocker
+104115,The browser_wa_properties-view-media-nodes.js test doesn't wait for the audio device to be actually closed,blocker
+145099,Browser Toolbox can't be resized,blocker
+59337,WebConsole helper function $ always returns null,blocker
+70270,Web console is buggy in window mode,blocker
+135639,browser_perf-button-states.js and browser_markers-minor-gc.js fail when Screenshots is landed as a system add-on (Legacy?),blocker
+55214,Implement Heads Up Display event handlers/observers,blocker
+67626,dcamp needs to spawn a new process,blocker
+60117,Clearing web console is rocket science,blocker
+59176,Can't tell apart elements and attributes in tree view in inspector,blocker
+145714,Crash in mozilla::a11y::Accessible::Bounds,blocker
+134199,DEVTOOLS_JAVASCRIPT_ERROR_DISPLAYED records values using empty keys,blocker
+132825,Perma failure in browser_webconsole_bug_595223_file_uri.js when Gecko 53 moves to Aurora,blocker
+111595,Browser Console does not launch with -jsconsole  after several restart,blocker
+77185,Console eval results capable of executing chrome-privileged code,blocker
+80013,setting   devtools.debugger.force-local   to false breaks Marionette in b2g,blocker
+75712,Remote debugging is possible even when disabled if netmonitor is enabled,blocker
+129097,test_css-properties-db.js is permafailing on Aurora since the Gecko 50 uplift,blocker
+130380,Beta devtools tests failing with browser_net_cause.js | A promise chain failed to handle a rejection:  - at chrome://mochitests/content/browser/devtools/client/netmonitor/test/browser_net_cause.js:118 - TypeError: stacktrace[j] is undefined,blocker
+104639,Profiler doesn't work without certified app pref being turned on,blocker
+131356,Accept an object as the   author   in manifest.json,blocker
+138028,Perma failure when 56 merges to beta in  test_chrome_ext_contentscript_telemetry.html | Data recorded for first extension for histogram: WEBEXT_CONTENT_SCRIPT_INJECTION_MS.,blocker
+130379,Beta mochitest(5) failing with test_ext_webrequest.html | Test timed out.,blocker
+135741,Permafailures in browser_extension_update_background.js | Test timed out after merge to Beta 54,blocker
+131733,Perma Failure after aurora to beta merge test_ext_webrequest_upload.html | Request body is unsupported,blocker
+140039,test_ext_startup_perf.js and test_ext_storage_telemetry.js are going to permafail when Gecko 57 is merged to Beta,blocker
+130124,extension will close native client and  sub processes those native client created,blocker
+124480,Relative URLs cause access errors at install time,blocker
+1447,[BLOCKER] insert object dialogs do not appear,blocker
+147004,Port Bug 1448330 - Make nsIURI.clone a private method,blocker
+146753,Disable RDL in FF61,blocker
+147138,trying to run a new bisection on mozregression-gui v0.9.23 throws an error,blocker
+50687,oggz_read_sync and oggz_read_update_gp don't check for errors from oggz_stream_get_content,blocker
+56286,StatementParams::NewResolve mishandles JSVAL_IS_STRING(aId),blocker
+60333,[ANGLE] Infinite loops and buffer overflow in byte_scan,blocker
+60332,new[] mismatch with delete instead of delete[] in TVariable::shareConstPointer,blocker
+147297,Build bustages @WasmInstance.h when Gecko 63 merges to Beta on 2018-08-27,blocker
+146028,Theme doesn't load and will not load after Firefox update,blocker
+147894,jsdebugger doesn't work in xpcshell-tests again,blocker
+147687,Geolocation via Google's service stopped working on release/beta builds,blocker
+148148,perma-failing in  xpcshell.ini:toolkit/components/extensions/test/xpcshell/test_ext_storage_idb_data_migration.js when Gecko 63 merges to Beta on 2018-08-27,blocker
+141891,Move E10SUtils.jsm into toolkit/,blocker
+148317,Permafailing z:/build/build/src/dom/media/webaudio/blink/HRTFPanner.cpp(40): error C2220: warning treated as error - no 'object' file generated,blocker
+148437,Port Bug 1484109 Modernize nsRelativeFilePref,blocker
+20214,Mozilla refuses to start due to unresolvable symbol in libgklayout.so: EnsureBorderColors__11nsCSSMarginGv,blocker
+17180,Iframe has black background,blocker
+928,[PP]Crashing when opening address book window,blocker
+43295,qm-xserve06 fails loading reftest 413292-1.html,blocker
+28115,Internal compiler error with MSVC 6 SP6,blocker
+62900,crash dimissing test pilot notification [@ nsViewManager::SetViewVisibility ],blocker
+4928,Seamonkey is HORRIBLY leaking GDI's  which -> Crash,blocker
+2050,[DOGFOOD] Printing Crashes in the nsViewManager,blocker
+1050,[DOGFOOD] [blocker] Overlappng views with native windows clip each other,blocker
+78903,Crash with Flashblock @ nsViewManager::InvalidateWidgetArea,blocker
+25540,Scrollbars misdrawn in 8/11/04 Mozilla Mac build with Classic theme,blocker
+26399,Menus placed at wrong position (directly under the window border),blocker
+26423,context menus broken,blocker
+25000,Mail folders never synchronise: SSL Failure / Server xxx has disconnected. The server may have gone down or there is a network problem,blocker
+148575,No symbolication in Fennec Android Nightly since Aug 14,blocker
+146128,Put the new behavior of setProperty behind pref and only enable it in Nightly,blocker
+148699,Perma ts_paint_heavy | 404 Client Error: Not Found for url: https://queue.taskcluster.net/v1/task/P-Ym59czSdyGKkGIIYwBQQ/artifacts/public%2Ftoday-simple.tgz due to failing hook,blocker
+147193,Hang on startup with security.enterprise_roots.enabled and a master password,blocker
+135667,Non-admin user doesn't get notification for update failure,blocker
+139264,assert len(self._whitelistpaths) <= 2 when running mach reftest,blocker
+122150,mozbuild.mozconfig.MozconfigLoadException: Evaluation of your mozconfig exited with an error.,blocker
+149130,The update scenario through channels doesn't work,blocker
+120380,Intermittent  Assertion failure: IsOnBackgroundThread()  at /builds/slave/m-in-lx-d-00000000000000000000/build/src/ipc/glue/BackgroundImpl.cpp:199 during stage-package,blocker
+1539,MathML not enabled in nightly builds,blocker
+149390,Firefox RCE from Hack2Win,blocker
+133777,Audio/video on Ciscospark is not working,blocker
+150375,credit charge test permafailing after November started,blocker
+150385,toolkit/modules/tests/xpcshell/test_CreditCard.js will permafail in January,blocker
+114302,ARM64: Javascript engine incorrectly assumes virtual addresses are 47 bit,blocker
+151134,Add-ons not working in Nightly,blocker
+144196,devtools/client/netmonitor/test/browser_net_view-source-debugger.js is going to permafail when Gecko 60 merges to Beta on 2018-03-01,blocker
+151418,Build bustage in gc/Verifier.cpp: error: base operand of Ÿ??->Ÿ?? has non-pointer type Ÿ??mozilla::DebugOnly<JS::Zone*>Ÿ??,blocker
+100373,Close the tab will not kill the worker if there is a console.log() keep printing log to DevTools,blocker
+151198,aboutNetworking.ftl is using windows line endings,blocker
+93961,assertion stack traces report   UNKNOWN   or only offsets from exported symbols in mochitests for many addresses in libxul.so and firefox,blocker
+148933,snap-perspective-1.html reftest sets preserve-3d when it (probably) shouldn't.,blocker
+143564,Cert xpcshell tests are permafailing due to expiration  e.g. security/manager/ssl/tests/unit/test_cert_chains.js - closed trees,blocker
+129623,Allow changing ssl_named_groups priorities,blocker
+149245,Avast/AVG deleting language packs rendering the browser unusable,blocker
+152375,Linux and Windows opt (=pgo) builds busted when Gecko 67 merges to beta on 2019-03-11,blocker
+133261,Perma failure in document-fullscreen-enabled.html | Document.fullscreenEnabled - assert_true: top-level document expected true got undefined when aurora moves to beta 52,blocker
+75220,[comm-central  Windows]   Could not create the directory: ..\..\..\..\..\..\..\..\_tests\testing\mochitest\tests\dom\imported-tests\webapps\WebStorage\tests\submissions\Infraware\iframe: No such file or directory  ,blocker
+11121,JS doesn't restart when SetScriptsEnabled is called with true,blocker
+141249,Massive Xpcshell test failure on 2017-10-28: 100 failing Xpcshell tests  1 failing Mozmill test (Friday bustage),blocker
+119298,Various test_interfaces.html permafails since Gecko 41 was merged to Beta,blocker
+83243,Compartment mismatch when using javascript: urls in locationbar,blocker
+103198,Every test suite which opens a window will crash on startup when aurora 32 merges to beta on July 21st,blocker
+59570,  nsDocument.cpp(4377) : error C2248: 'nsAString_internal::nsAString_internal' : cannot access protected member declared in class 'nsAString_internal'  ,blocker
+60556,  nsXMLContentSerializer.cpp(650) : error C2248: 'nsAString_internal::nsAString_internal' : cannot access protected member declared in class 'nsAString_internal'  ,blocker
+28924,content window gets no scrollbars,blocker
+143896,(C-C) Building with --disable-tests  fails due to compilation error caused by a missing header file  mozITestInterfaceJS.h,blocker
+33720,Move docshell changes for session storage into a new interface,blocker
+29520,Crash calling createRange on a wrapped document,blocker
+56263,layout/generic/test/test_bug496275.html makes mochitest-plain time out when the HTML5 parser is enabled,blocker
+37318,onload doesn't fire for XHTML documents that contain a script tag (Firefox's RSS preview is broken),blocker
+118138,Building with clang tip fails:   declaration conflicts with target of using declaration already in scope   (Promise),blocker
+8024,[xpcdom] permission to add sidebar denied,blocker
+56107,Pref callback changes severely slow down reftest and shutdown,blocker
+34537,Help menu  buttons in prefwindow broken,blocker
+134717,Perma Bustage when Aurora 54 moves to Beta in nsGlobalWindow.cpp:3470:23: error: unused variable 'contentOpener' [-Werror=unused-variable],blocker
+78865,WebRTC PeerConnection broken by m-c merge - proxy object on parameter for createOffer success,blocker
+133261,Perma failure when aurora 52 moves to beta test_interfaces.html | If this is failing: DANGER  are you sure you want to expose the new interface Pose to all webpages as a property on the window (XBL: false)?,blocker
+30383,Leaking webshell/domWindow,blocker
+59632,non-IPC builds burning with nsContentPermissionHelper,blocker
+118148,mozAlarm mixes up 2 alarms: one for a regular CalDav sync  the other to wake you up,blocker
+145965,Crash in mozilla::ipc::PrincipalInfoToPrincipal,blocker
+80210,[MozActivity] fails for OOP applications,blocker
+34135,Reload doesn't work,blocker
+5315,Using DOM to add tabs crashes Mozilla.,blocker
+675,smoketest: regression(?) crash in jsdom.dll,blocker
+650,[BLOCK] screenx and screeny not implemented for the event object,blocker
+5103,getElementsByTagName() causes exception,blocker
+1157,[regression] reading from <any frame>.location causes function to exit sliently,blocker
+3770,self.frame1.document.open() -->   Access to property denied  ,blocker
+804,nodelist::item(i) returning null in XML,blocker
+44844,Crash when copying or dragging content within an html <ul> element [@ nsHTMLContentSerializer::IsFirstChildOfOL(nsIDOMElement*) ],blocker
+56315,[Debug Windows SeaMonkey]   nsinstall.exe: Bad file number   regression,blocker
+56364,[Debug MacOSX SeaMonkey] leak test:   ASSERTION: Want to fire mutation events  but it's not safe   since bug 429175 landing. (  all   other test suites too),blocker
+33265,Several cancel  confirmation and close functions don't work anymore,blocker
+114771,Various DOM manifest mochitests are going to permafail when Gecko 39 merges to Aurora,blocker
+34065,Menu-Funktions are broken (Regression) [@ JS_GetOptions],blocker
+8130,Chrome scripts silently fail to load with when they contain syntax errors,blocker
+135376,FileSystemDirectoryEntry compilation error on esr52,blocker
+93142,error: undefined reference to 'nsWrapperCache::GetWrapper() const' building with gcc 4.5.1,blocker
+121953,MY HTML FORM not submitted and javascript not working,blocker
+1127,[BLOCKER][CRASHER]Posting a form several times causes the browser to crash,blocker
+1612,[BLOCKER] [TESTCASE] setting the value of a hidden [or any input] in a form from a function [which is stored in js library] is not working,blocker
+12535,BUTTON type=submit is not submitting...,blocker
+938,Browser fails to display cgi output from the same URL,blocker
+1044,[CRASH] Submitting Form,blocker
+1171,[BLOCKER] Problems submitting hidden field,blocker
+1743,[DOGFOOD] Crash when submitting Bugzilla query,blocker
+5211,[nsbeta3+][FIX]Link processing does not properly remove the CR/LF from the url in the anchor,blocker
+1305,[BLOCKER][CRASH] Form doesn't send data when more than 16KB are submitted,blocker
+12331,High ASCII data is being cut off at certain characters during form submission,blocker
+636,Forms not submitting (test8),blocker
+594,[BLOCK]ender- Mouse Events don't work with *GFX* OPTGROUP or OPTION elements,blocker
+1051,form is missing...none of the fields are visible,blocker
+639,form submission broken in viewer,blocker
+834,Attempting to access profile directory prior to the existence of profile(s),blocker
+5065,Only first paragraph of a multiline form gets submitted,blocker
+3320,Form Submission Observer Changes,blocker
+2549,[REGRESSION] Options menus always displaying first item in the list.,blocker
+7584,Forms don't submit,blocker
+10817, --disable-bidi build bustage  caused by jkeiser's patch,blocker
+14391,Incorrect form submission on bug pages (wrong form submitted),blocker
+16264,Form in TABLE/TR does not submit,blocker
+9036,Mozilla causing corruption of Bugzilla bug data,blocker
+16994,Form submit buttons not working [embedding apps],blocker
+6384,input type=image doesn't submit form (PowerPC  Macintosh),blocker
+5885,this.selectionStart is broken in XBL handler for textarea ,blocker
+34331,Crash when I hover over chrome [@  nsEventDispatcher::Dispatch],blocker
+10983,DispatchNewEvent cannot occur on anonymous content,blocker
+113722,Keyboard stops working on OS X,blocker
+1195,[key]Key Press events are not being generated correctly,blocker
+1222,[BLOCKER] backspace in GFX text control crashes on event procesing in the PresShell,blocker
+911,[PP][BLOCKER] nsDOMEvent::GetScreenX/Y() doesn't work on macOS,blocker
+1346,[BLOCK] event state manager can't tell when frames it tracks go away,blocker
+3559,[blocker] mail events get ignored after using mail briefly,blocker
+8893,After visiting foxnews.com  can't use URL bar,blocker
+594,[PP]demo blocker -Frequent resizing of window causes apprunner to stop drawing,blocker
+2145,[DOGFOOD] Can not submit form onLoad event.,blocker
+3395,Clicking on links or buttons sometimes does nothing,blocker
+12774,Browser unusable when it is deactivated with an applet having focus,blocker
+13980,cert auth takes minutes,blocker
+1485,replace 'ondblclick' with 'onmousedown' + event.clickCount == 2,blocker
+130,[BLOCK] Can't move positioned elements with mousemove/clientX detection,blocker
+2686,Scrolling w/spacebar then dragging thumb crashes seamonkey,blocker
+1530,[PP] Mac: Key binding modifiers aren't respected on Mac,blocker
+4423,Crash on clicking any link,blocker
+2031,  Dead keys   in keyboard handler not supported.,blocker
+686,[Blocker]Events being delivered to the wrong window,blocker
+1249,Need policy on char codes for modifier keys,blocker
+3826,Several events crash the browser,blocker
+5092,Trying to login to my.netscape.com page freezes the browser,blocker
+945,[PP]DOM Event listeners don't get MouseOut events when mouse leaves window,blocker
+1887,[CRASH] Clicking in URL field  then pulling down a menu causes a crash,blocker
+2728,Can't select in editor window after focus moves away,blocker
+3460,Pressing TAB button crashes browser,blocker
+4523,onFocus event causes crash,blocker
+10602,Every typed character/Keyboard shortcut is *doubled* when entered,blocker
+34201,xul window load event handlers no longer called with evt.eventPhase == Event.AT_TARGET,blocker
+34235,Bug 338897 may have caused other crash,blocker
+14291,crash in button_onblur test case within frames,blocker
+9623,Mac build crashes randomly in HandleOSEvent() - Trunk [@ 0xffc10000 - nsMacEventHandler::HandleOSEvent],blocker
+7290,arrow keys no longer work in textfields,blocker
+16976,focus/tabbing broken in application windows (xul) when textfield-only option is set,blocker
+27745,Crash when tabbing through form fields (nsILookAndFeel::GetMetric),blocker
+11910,Keyboard shortcuts not working,blocker
+7183,key bindings don't work in text conls in content,blocker
+20488,CTRL-M fails in Browser windows  can't launch mail,blocker
+153912,NoExtraKeys isn't imported in generated Kotlin code in glean,blocker
+88126,shutdown crash in nsContentUtils::DropJSObjects or mozilla::cyclecollector::RemoveJSHolder,blocker
+76292,Bug 754202 regressed IsCapabilityEnabled,blocker
+76312,mozRequestAnimationFrame bypasses security check in TraceMallocDisable?,blocker
+77463,Ensure that the compartment principal always matches the document principal,blocker
