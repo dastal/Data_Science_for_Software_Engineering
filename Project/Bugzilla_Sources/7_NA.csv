@@ -1,0 +1,1538 @@
+Declare callers of `Selection::GetRangeAt` `const` when possible;N/A
+Make `docshell/` buildable outside of `unified-build` environment;N/A
+Make `dom/html/` buildable outside of `unified-build` environment.;N/A
+Simplify js::BaseScript flag accessors;N/A
+Add a BaseShape flag for frozen elements;N/A
+Change the default value of InputAPZContext::sApzResponse to nsEventStatus_eSentinel;N/A
+Some Execute/ExecuteKernel cleanup;N/A
+Cleanups in JS::CompileOptions;N/A
+"Initialize ""input"" ImmutableScriptFlags in SharedContext";N/A
+Better align SharedContext/FunctionBox to ImmutableScriptFlags;N/A
+Remove AbstractScopePtr::canonicalFunction();N/A
+Box the ParseError to reduce the size of Result type.;N/A
+Initialize JSFunction::nargs when allocating function in function;N/A
+Remove JSOp::CheckIsCallable;N/A
+Create FunctionBox without a FunctionCreationData;N/A
+Use ScriptThingsVector for FunctionCreationData;N/A
+remove HPKP (http public key pinning) entirely (not built-in pins);N/A
+Fix building NSS on Debian s390x, mips64el, and riscv64;N/A
+[MIPS] Failed to build js  on mips64 (error: no matching member function for call to 'bailoutTest32');N/A
+Remove remains of removed approach to initializers;N/A
+Warp: transpile some more CacheIR instructions;N/A
+HACL*  update after changes in libintvector.h;N/A
+support tabs.goForward() and tabs.goBack() for Android;N/A
+Warp: don't use an IC for JSOp::InitElemArray;N/A
+Warp: use template objects for NewArray and NewObject JSOps;N/A
+Remove ParserBase::sourceObject_ field;N/A
+Add Fission crash test for bug 1584467;N/A
+Remove frontend::FunctionTree type;N/A
+Reenable device lost testing on WebRender;N/A
+Warp: Transpile even more compare ops;N/A
+Expose QuoteString internals via header files;N/A
+Avoid running publishDeferredFunctions for Reflect.parse;N/A
+Remove more virtual methods from ScriptStencil;N/A
+Add ScriptStencil::intoScript;N/A
+Irregexp: Add target for differential fuzzing;N/A
+Don't check the blocklist for builtin/system addons;N/A
+JSWindowActor.actorCreated only available in child, not parent;N/A
+Update the JS NameResolver for Stencil;N/A
+Figure out what do with InterfaceObjectToString / DOMIfaceAndProtoJSClass::mToString;N/A
+Add DAMP test for Inspector Rules view with many CSS variables;N/A
+Remove no longer used truncateInput_ and storageType_ from MStoreUnboxedScalar;N/A
+Add folding for more guard instructions;N/A
+Prevent Cell::is<T> footguns around derived types;N/A
+Add CompilationInfo::initFromLazy;N/A
+Wasm SIMD opcode renumbering + wat update;N/A
+Enable for javascript.options.property_error_message_fix for MOZ_DEV_EDITION;N/A
+Add CodeGenerator::emitCreateBigInt;N/A
+Expose quota constants and getBytesInUse to mozIExtensionStorageArea;N/A
+Expose js::ErrorReport in public JSAPI;N/A
+Fix error handling in nsContentUtils::IsPatternMatching;N/A
+Further reduce unnecessary scene building;N/A
+Make the allTrue porting APIs x86_shared;N/A
+Update glean_core to at least v30;N/A
+use timestamp field from crlite entries instead of filename to determine most recent filters/stashes;N/A
+Removed missed piece of optional parser allocation deferal;N/A
+Support kaios in 'mach xpcshell-test';N/A
+Optimize slot/element loads + MUnbox;N/A
+Optimize StringCharCodeAt in CacheIR;N/A
+Reduce includes of GeckoContentController.h just for its enums;N/A
+Fold MUnbox with Int32 MBox input;N/A
+Change JSRT fuzzing interface to return int32 and handle timeouts;N/A
+Use replaceAll in EscapeAttributeValue;N/A
+Warp: Support transpiling Calls to known natives;N/A
+Transpile DoubleNegationResult;N/A
+Add a NS_INLINE_DECL_THREADSAFE_REFCOUNTING_WITH_DESTROY;N/A
+Optimize MathSqrt in CacheIR and Warp;N/A
+Optimize generic unary Math functions in CacheIR and Warp;N/A
+Optimize IntrinsicToString in CacheIR and Warp;N/A
+Stop setting toolkit.cosmeticAnimations.enabled in browser_console_webconsole_ctrlw_close_tab.js;N/A
+Snapshot incoming scope information for Stencil;N/A
+Consider to move *Ancestor* API to nsINode;N/A
+Combine ScriptStencil / ScriptStencilBase / BCEScriptStencil;N/A
+Make CallbackObject methods return JSObject pointers rather than handles;N/A
+Allow WebExtensions to clear cache and pluginData by hostname;N/A
+Warp: Transpile JSOp::New;N/A
+More cleanups of NaN in JS::Value;N/A
+Pytest fixture isolation;N/A
+Add a profiler marker for the number of picture cache tiles that are invalidated;N/A
+Make it more obvious that the scrollDelta used for adjusting the displayport is the same as the callback transform;N/A
+Add MakeUniqueForOverwrite helpers and some usages in Buffer.;N/A
+Add explicit Histogram::SampleSet::Clone method;N/A
+Add a comment about XPCWrappedNativeProto ownership;N/A
+utilize crlite stashes (incremental diffs in crlite state);N/A
+Remove unused function nsHttpHandler::Get32BitsOfPseudoRandom();N/A
+Improve stack information for promises due to exception in then/catch handlers;N/A
+Add Maybe method to move out contents leaving Nothing() behind;N/A
+Move script-atoms from RuntimeScriptData to PrivateScriptData;N/A
+avoid name hiding for handling multipart channel in HttpChannelChild;N/A
+Convert 'mach test-info' to run with Python 3;N/A
+Remove IsInAnonymousSubtree;N/A
+Clarify the remote type for cross origin/site iframe if both COOP and COEP headers are set;N/A
+Warp: support >>> in the transpiler;N/A
+Clean up some old TabContext code which is no longer relevant;N/A
+Stop reporting toolkit.cosmeticAnimations.enabled in TelemetryEnvironment;N/A
+Add 'Media' category for profiler label;N/A
+Stop the APZ code from using ipc's MessageLoop and ipc::base::Thread;N/A
+Add error boundary to EagerEvaluation component;N/A
+Remove PJavaScript and everything else in js/ipc;N/A
+Add a pref to guard Iterator Helpers features;N/A
+Put the targetFront on each resource;N/A
+Define and implement Nightly UI experience for FPI users when dFPI is disabled;N/A
+Remove NS_ERROR_XPC_CANT_PASS_CPOW_TO_NATIVE;N/A
+Remove cpows preferences;N/A
+Remove unused --enable-cpow-warnings option;N/A
+Optimize SIMD v8x16.shuffle in Ion x86_64;N/A
+Optimize SIMD shifts in Ion x86_64;N/A
+Tidy ArenaLists class definition;N/A
+Find a way to test about:processes;N/A
+Remove message manager usage from browser_clipboard.js;N/A
+Remove some unused event target functions;N/A
+Rename ResourceType to their singular counterpart;N/A
+Incorrect documentation of authentication algorithms in telemetry;N/A
+Incomplete documentation of key exchange algorithms in telemetry;N/A
+[meta] Ship multi-value;N/A
+Optimize Math.round in CacheIR and Warp;N/A
+Optimize Math.floor in CacheIR and Warp;N/A
+Optimize Math.ceil in CacheIR and Warp;N/A
+Remove nsDisplayResolution;N/A
+Optimize Array.isArray in CacheIR and Warp;N/A
+Modernize and re-enable browser_notification_do_not_disturb.js;N/A
+Stop setting toolkit.cosmeticAnimations.enabled in extension tests;N/A
+Warp: Transpile Function.prototype.call;N/A
+Enable remote Canvas 2D in early Beta (and Nightly);N/A
+Remove unused steeplechase code;N/A
+Defer JSFunction/BaseScript allocation in BinAST;N/A
+Cleanup CompilationInfo::instantiateStencils and friends;N/A
+Ship WebRender to more Intel in 78;N/A
+Changes to allow for origin isolation;N/A
+Use a better hash table for IDMap;N/A
+Update jsparagus and use ImmutableScriptFlags directly;N/A
+Can't upgrade glean_core because of miniz_sys weirdness.;N/A
+Rename nsIPrintSettingsService's defaultPrinterName to lastUsedPrintersName;N/A
+Optimize IsCallable/IsConstructor in CacheIR and Warp;N/A
+Remove the rest of the hacky print prefs code introduced by bug 1276717;N/A
+Refactor nsPrintJob::EnablePOsForPrinting to be understandable;N/A
+Rename nsPrintObject's mDontPrint and IsPrintable for consistency with its EnablePrinting;N/A
+There's no GC telemetry for mobile platforms;N/A
+Some CacheIR cleanups for lazy functions;N/A
+Remove the unused MessageChannel::Echo();N/A
+Remove nsPrintJob.cpp's MapContentToWebShells and MapContentForPO functions;N/A
+Make the message argument to Channel::Send() a UniquePtr;N/A
+Clean up moz.configure dependencies for wasm-gc;N/A
+"Make all printing ""print as is"" printing";N/A
+Make ChannelImpl::output_queue_ use UniquePtr;N/A
+Let WR font sanitization ride the trains;N/A
+Optimize GuardToClass intrinsics in CacheIR and Warp;N/A
+Make the MessageChannel Send and Call methods take a UniquePtr argument;N/A
+Remove 'whitelist' from Form Autofill code;N/A
+Optimize Math.pow in CacheIR and Warp;N/A
+Optimize String.fromCharCode in CacheIR and Warp;N/A
+Disable consistency check for opcodes, in SM non-unified job;N/A
+Test that the Fx77 Windows signing key change doesn't prevent A/V software from reading logins.json;N/A
+Optimize Math.random in CacheIR and Warp;N/A
+Don't optimize certain cross-realm natives in CacheIR;N/A
+Factor *Scope::Data structures into GC, Non-GC, and NamesList components.;N/A
+Warp: Transpile Load(Double|BigInt)Result;N/A
+Move the OS reauth logic in AboutLoginsParent to LoginHelper in toolkit;N/A
+Warp: Transpile GuardSpecificSymbol;N/A
+Refactor LoadInfo to support loading non-TYPE_DOCUMENT/TYPE_SUBDOCUMENT in DLL;N/A
+Warp: fix try-catch support;N/A
+MComputeThis should return an object instead of Value;N/A
+jstest harness: shell-option() works in jstests.list but not in |reftest| lines, for wonderful reason;N/A
+Share LRandom lowering code;N/A
+Change scope BindingIter to be abstract on the type of atom;N/A
+Use bumpalo 3.4.0;N/A
+Warp: Transpile LoadDenseElementHole;N/A
+Include delazification in profiler JS_Parsing marker category;N/A
+[wpt-sync] Sync PR 23303 - bluetooth: implement writeValueWith[out]Response();N/A
+Marionette's print.printToFile takes a MozBrowser, not an nsIFrameLoader;N/A
+Make WR tree printing more android-friendly;N/A
+Remove kPaperSizeNativeData and kPaperSizeDefined;N/A
+"Move PopupNotifications.jsm to a component other than ""Password Manager""";N/A
+Migrate browser.sync.storage data in a sensible way given quotas are not currently enforced.;N/A
+Irregexp: Fix case-insensitive non-unicode backreferences;N/A
+Optimize Object() in CacheIR and Warp;N/A
+Optimize String() in CacheIR and Warp;N/A
+Add an IC for JSOp::ToId;N/A
+Make some CacheIR code work with numbers instead of just doubles;N/A
+Implement iNxM.bitmask;N/A
+Pull in wat version that can handle the SIMD .bitmask opcode;N/A
+Avoid scalarizing i64x2.mul on x64/x86;N/A
+Add memory reporter for regexp Isolate;N/A
+Run Document content security checks in the parent process;N/A
+Optimize emscripten exploded constants as proper constants;N/A
+Add memory reporter for HelperThreads::helperContexts_;N/A
+Add state to EnvironmentAddonBuilder's shutdown blocker;N/A
+Distinguish BaselineInterpreter samples in Profiler;N/A
+Block WebRender in release on > 60Hz monitors;N/A
+Refactor nursery collection;N/A
+Optimize UnsafeGetReservedSlot intrinsic in CacheIR and Warp;N/A
+Clarify UsedNameTracker comment and add worked example;N/A
+Deal with formatting of js.msg;N/A
+Factor out a common method for implementing all init*IteratorProto functions;N/A
+Add support for multiple versions of HTTP3;N/A
+Add a fast path for atom regexps in PrepareAndExecuteRegExp;N/A
+"Add telemetry to the ""Find toolbar""";N/A
+FinalizationRegistry cleanupSome method should not be present in the browser;N/A
+Enable weak references by default in the JS shell;N/A
+Add a WindowContext getter to Document;N/A
+Handle AsmJS Parsing without allocating on the GC;N/A
+FOG's C++ API Design;N/A
+[wpt-sync] Sync PR 23583 - bluetooth: Impl. watchAdvertisements();N/A
+Don't sweep arenas that were allocated during marking;N/A
+Map.prototype.entries receiver check error message needs improvement;N/A
+Add workarounds for ICU/CLDR issues with display names and append items;N/A
+Renew or Remove extra async shutdown timeout annotations from bug 1631605 on or before 2020-06-21;N/A
+Optimize Object.prototype.toString for primitives;N/A
+Update ScriptStencil structs;N/A
+Remove client-side code for handling FlexItemHighlighter;N/A
+Use a single set of ProfilerCategory definitions;N/A
+Add profiler sub-categories for SpiderMonkey JITs;N/A
+Add a temporary solution for modal dialog centered alignment;N/A
+Implement wasm SIMD for x64 Ion;N/A
+Eliminate gratuitous use of dom::danger::GetJSContext() in ForceShrinkingGC();N/A
+Optimize some RegExp intrinsics in CacheIR and Warp;N/A
+Add expiration date in card list view under Preferences;N/A
+[Doorhanger V2] Collect all <input> values, pass to doorhanger;N/A
+Document compiler selection;N/A
+Math.{min,max} optimization slows down ToLength;N/A
+Implement the labeled counter metric type for Project FOG;N/A
+Rewrite shell module loader in C++;N/A
+Generate more efficient code for fallible unbox;N/A
+Use Shmems instead of SharedMemory in WebGL remoting;N/A
+Create mach command or wrapper to build SpiderMonkey with local jsparagus;N/A
+Change AggregateError.errors to a data property on instances;N/A
+Warp: use template objects for scripted constructor calls;N/A
+[wpt-sync] Sync PR 22982 - Steams: update tests for Web IDL conversion;N/A
+Error message for relative module URLs not very informative;N/A
+Modify printing telemetry to add a PDF-catch-all for unknown printer names containing 'PDF';N/A
+Fix IpdlQueue handling of arguments with imprecise MinSize estimate;N/A
+Remove nsIDocShell::forcedCharset;N/A
+Constant fold SIMD reduction operators;N/A
+Reverse-elfhack code in android xpcshell harness is no longer used;N/A
+Convert MessageChannel::mLink to a UniquePtr;N/A
+[socket process] make sure we don't leak HttpBackgroundChannelChild and BackgroundDataBridgeChild;N/A
+Warp: fix Uint32Array loads;N/A
+Mark nsINode parameters as const in editor;N/A
+"Remove the old android ""native"" theme.";N/A
+Optimize Math.fround in CacheIR and Warp;N/A
+Ensure scroll restoration works properly with a visual viewport enabled;N/A
+Remove unused webrtc sctp code;N/A
+Use StaticPrefs API to query dom.webshare.enabled preference;N/A
+Treat BigInt property names as computed expressions in the parser;N/A
+drop allow_unsafe_parent_loads from extension tests;N/A
+renew INTERMEDIATE_PRELOADING_* telemetry;N/A
+Support generators in self-hosted code;N/A
+Add Iterator.from method;N/A
+Add eager Iterator Helper methods;N/A
+Add Iterator constructor to global object;N/A
+[wpt-sync] Sync PR 24130 - Set PictureInPictureWindow in leavepictureinpicture event;N/A
+Add eager AsyncIterator helper methods;N/A
+Tidy up and optimize some WarpOracle code;N/A
+"Remove some uses of ""blacklist"" from dom/ipc/";N/A
+Add ParserAtoms representation and table implementation (preffed off);N/A
+Make sure the visual viewport is properly updated when layout scrollbars are added or removed;N/A
+Activate media controller when media enters fullscreen;N/A
+Relocate deprecated seed algorithm;N/A
+Warp: fix repeated bailouts from redundant bounds check elimination;N/A
+Remove or update probes expiring in Firefox 78: pictureinpicture.*;N/A
+add remoteType to nsIParentChannel;N/A
+Unify kCharsetFromUserForced and kCharsetFromParentForced;N/A
+Make wasmDis optionally return a string;N/A
+Ensure content processes cannot shutdown during async process switches;N/A
+Avoid unnecessary redirection of promises.;N/A
+Stop migrating logins from SQLite to JSON via LoginImport.jsm;N/A
+Remove AutoObjectMapperFaultyLib;N/A
+Warp: set implicitly-used flag correctly for unused IC inputs;N/A
+DataSourceSurface::MappedSurface does not have a constructor and fails linting;N/A
+Add a new PlatformOverride field onto BrowsingContext;N/A
+Add support for HTTP3 draft 29 and draft 28;N/A
+Extract `wineventlog` crate from updateagent for more general use;N/A
+[socket process] Perma Assertion failure: tqParent, at /builds/worker/checkouts/gecko/netwerk/protocol/http/HttpTransactionParent.cpp:173;N/A
+Update credit card save doorhanger and content dropdown text;N/A
+Remove or update probes expiring in Firefox 80: SESSION_RESUMPTION_WITH_*;N/A
+Add Wycheproof ECDSA tests to NSS;N/A
+"Fix up ""Payload presented"" markers";N/A
+osclientcerts: re-scan OS storage only when NSS is searching for all certificates/keys;N/A
+Upgrade authenticator-rs to v0.2.13;N/A
+Known JSClass analysis based on MIR;N/A
+Clarify in telemetry API docs that only events flushed to storage are cleared;N/A
+Stop using GetInProcessParentDocument in HTMLCanvasElement::RegisterFrameCaptureListener;N/A
+Stop using GetInProcessParentDocument in HTMLFormElement::DoSecureToInsecureSubmitCheck;N/A
+Open credit-card autofill pop-up when user clears a credit-card field;N/A
+[macOS] Remove OS-specific sandboxing code for unsupported versions (up to 10.11 inclusive);N/A
+Add slow path for GuardSpecificAtom in Warp;N/A
+Minor nursery improvements;N/A
+Warp: handle the unreachable-OSR-loop case;N/A
+Cranelift aarch64: support multi-values;N/A
+Report usage of blocklist v3 to telemetry;N/A
+Make BailoutKind an enum class;N/A
+XPath search isn't working for some expressions;N/A
+Remove forceCharset from nsIContentViewer;N/A
+MediaEngineDefaultVideoSource() will deadlock if used;N/A
+Don't submit a SourceCompressionTask when shutdown;N/A
+Remove remnants of the toolkit.cosmeticAnimations.enabled pref;N/A
+Request a security review on credit card autofill;N/A
+Move more handler code in HelperThread::handleWorkload into runTask();N/A
+Remove or update probes expiring in Firefox 81: GC_MARK_*;N/A
+Remove or update probes expiring in Firefox 81: GC_PRETENURE_COUNT;N/A
+Remove or update probes expiring in Firefox 81: GC_MARK_RATE;N/A
+[socket process] reenable profiler tests;N/A
+Develop an integration test for Firefox on Glean;N/A
+Remove backwards compatibility checks for responsiveActor.setElementPickerState();N/A
+Update jsparagus for bug 1648005;N/A
+Move d3.js from devtools/ to third_party/;N/A
+Perma linux toolchains bustage gecko/tools/profiler/core/ProfilerMarkerPayload.cpp:1150:1: error: control reaches end of non-void function [-Werror=return-type];N/A
+Ship weak refs;N/A
+Move logic out of prim_store/mod.rs;N/A
+Add `os.file.listDirRelativeToScript` to the JS shell.;N/A
+Improve discoverability of geckoview streaming docs;N/A
+Interrupt worklet thread JS on document unload;N/A
+Use a friendlier name for the OSKeyStore Keychain item;N/A
+Allow Atomics methods on ArrayBuffers;N/A
+Exclude referrer policy from the preload hash key to workaround bug 1637671;N/A
+Remove a couple of instances of my deadname;N/A
+intermediate certificate preloading healer;N/A
+Update FOG Preferences docs to include the data reporting pref;N/A
+Clarify in code and docs that accumulations in GeckoViewStreamingTelemetry's SendBatch could deadlock;N/A
+Add a base class with runTaskLocked method;N/A
+Skip invisible primitive clusters after the visibility pass.;N/A
+Remove unused definition of FinalizationIteratorObject;N/A
+Reference types: Ship it;N/A
+[meta] Clean up wasm shared memory + atomics for production;N/A
+Remove mozAddonManager permission from discovery.a.m.o;N/A
+Rename blacklist, whitelist, and skiplist in the anti-tracking and url-classifier code;N/A
+Update DTLS 1.3 to draft-38;N/A
+Add unit test for interaction between extensions and the thumbnail service;N/A
+[socket process] make about:networking work;N/A
+Remove nsIDOMWindowUtils.containerElement;N/A
+Report pretty error messages from JSContentActor APIs;N/A
+Ensure Private Methods aren't enabled early by accident;N/A
+Fission: Audit / fix callers of GetToplevelContentDocumentPresContext;N/A
+Enable non-proxy test262 tests for private fields;N/A
+GC issue in jsshell with `addMarkObservers`;N/A
+update neqo to 0.4.6;N/A
+Use 'SameSite' (capital 'S') everywhere;N/A
+Create an abstraction for sequential iteration of multiple iterators;N/A
+SUMO Page for Credit Card Autofill;N/A
+Refactor subdialogs.js to reusable JSM;N/A
+Isolate speculative connections per first-party when privacy.partition.network_state is set to true;N/A
+Add cookie sameSite schemeful as an experimental feature;N/A
+Remove duplicate js::NewString[DontDeflate] functions;N/A
+toolkit.shutdown.fastShutdownStage should be 0 in ASan builds;N/A
+Add Baseline IC stubs at the front, check enteredCounts in WarpOracle;N/A
+stop uploading artifacts (the shell, jsapi-tests) for SM that don't have tests;N/A
+Re-enable browser/base/content/test/performance/browser_startup_images.js tests for Fission without WebRender;N/A
+Add a more helpful comment to nsPrintJob::Observe;N/A
+Add support for testing fission OOP iframes in xpcshell tests;N/A
+Update crash report remote type annotation for the preallocated process;N/A
+Run Fission Mochitests in a cross-site iframe;N/A
+Remove IsAboutToBeFinalizedDuringSweep;N/A
+Miscellaneous bugfixes in disabled ParserAtom code;N/A
+ParseTaskVector should store UniquePtr;N/A
+Disable dfpi when privacy.firstparty.isolate=true;N/A
+Fix use of GetTopLevelContentDocument in Document::ReportShadowDOMUsage;N/A
+Minor cleanup in nsGlobalWindowOuter::PrintOuter;N/A
+Remove FunctionBox::function() accessor;N/A
+Add a metrics.yaml (and optionally a pings.yaml) to FOG;N/A
+Basic Private Fields Support;N/A
+Ship logical assignment operators (??=);N/A
+Do not use Http3 if be-conservative flag is set;N/A
+Instantiate Scope data;N/A
+Remove notifying `inprocess-browser-shown` observer;N/A
+Update WPT metadata for BigInt/I64 tests once proposal tests are merged;N/A
+Verify audio in drift correction tests;N/A
+Defer ScriptSourceObject allocation for Stencil;N/A
+Simplify converting parseWaitingOnGC to parseWorklist;N/A
+Implement wasm SIMD for x86 Ion + Baseline;N/A
+Investigate correctness and stability issues with RenderCompositorNativeSWGL;N/A
+Fix assignment to private field member expression;N/A
+Optimize BindGName in Warp;N/A
+update neqo to 0.4.8;N/A
+Warp: support nursery objects in the transpiler;N/A
+implement a public GetInnerHTML() for DocumentFragment (copied from ShadowRoot);N/A
+[Doorhanger V2] change doorhanger dropmarker icon;N/A
+ExtensionPermissions.jsm uses deprecated FileUtils.getDir (main thread I/O on startup);N/A
+Implement the prefers-contrast media-query;N/A
+glslopt doesn't support uniform buffer objects;N/A
+Support shell options natively in test262-update.py;N/A
+Fission content processes aren't prestarted;N/A
+Add profiler feature to control Audio Callback Tracing;N/A
+Simplify FinalizationRegistry implementation by separating JS interface from implementation of callback queue;N/A
+Generate comments with information about the shader during optimization;N/A
+Shared surfaces memory reporter should give KIND_OTHER a different path;N/A
+Avoid allocating memory when computing the area of occluders;N/A
+"Fix ""Genreate"" typo";N/A
+Irregexp: Tidy up loose ends;N/A
+Add browser pref for private fields support;N/A
+Allow SWGL render compositor to work asynchronously during picture cache tile updates;N/A
+Move cell header field to the Cell class and remove CellHeader classes;N/A
+Create an abstraction for nested iteration;N/A
+Do decommit preparation work off-thread;N/A
+Add lazy Iterator helper methods;N/A
+NSS 3.55 should depend on NSPR 4.27;N/A
+ensure staged addons are compatible before install;N/A
+add api to simplify updating and staging langpacks for app-update;N/A
+[Doorhanger V2] Add telemetry event for username/password edits in the doorhanger;N/A
+Inline IsPackedArray in CacheIR and Warp;N/A
+Stop nsPrintJob::DoCommonPrint using its arguments after it creates the static clone;N/A
+Support NullScriptThing;N/A
+Setup a pref for tab modal print UI;N/A
+Convert all the VarCache prefs in dom/*;N/A
+Add GCThingIndex;N/A
+Avoid allocating in ClipChainStack::push_surface;N/A
+Insist that iteration callbacks don't GC;N/A
+Freeze docshell tree navigation at the same time for both print and print preview;N/A
+Optimize ArrayPush in Warp;N/A
+Fix boolean type in CacheIR;N/A
+Add automated tests for toggle variation experiments;N/A
+Enable wasm in safe mode;N/A
+Enable baseline interpreter in safe mode;N/A
+Add Primary Password SUMO link and text about the name change;N/A
+[Doorhanger V2] Create a doorhanger UI that can display multiple logins;N/A
+Clean up code around `nsFrameSelection::HandleDrag`;N/A
+Factor selection of range's frames from `Selection` out;N/A
+Stop using message passing to initiate printing;N/A
+Add lazy AsyncIterator helper methods;N/A
+Use getCookieSince to get cookies;N/A
+Make cookie purging work with cookieBehavior 1 and 3;N/A
+"Make ""locales"" and ""options"" arguments and the ""type"" property mandatory for Intl.DisplayNames";N/A
+Change fractionalSecondDigits to no longer accept zero;N/A
+Fix failing CSS mochitests with cross-origin and Fission enabled;N/A
+Card type/network isn't filled using heuristics (e.g. on Macy's);N/A
+don't enable osclientcerts on versions of macOS it won't work on;N/A
+Add build flag to disable RC2 and relocate to lib/freebl/deprecated;N/A
+[Doorhanger V2] Show usernames from all <input>s in the doorhanger;N/A
+Support more than 256 CacheIR ops;N/A
+Add ecosystemClientId to the Accounts Ecosystem Telemetry ping;N/A
+Simplify switches and flags for features that have shipped;N/A
+Stop using CallNonGenericMethod for Date methods;N/A
+"Add ""How to update Glean SDK and Glean Parser"" docs to in-tree documentation";N/A
+Calculate top level extent in jsparagus;N/A
+Optimize DataView get/set methods in CacheIR and Warp;N/A
+Optimize some typed array intrinsics in CacheIR and Warp;N/A
+Optimize remaining Math natives in CacheIR and Warp;N/A
+Preparation for function stencil;N/A
+Set default title of session history entry to the URL for session history in the parent.;N/A
+Remove nsIDocShell::GetOSHEId;N/A
+Cranelift aarch64: support reference types;N/A
+Remove the timestamp field from the GC profiler marker;N/A
+Move JSErrNum and js::GetErrorMessage to their own header;N/A
+Optimize some more intrinsics in CacheIR and Warp;N/A
+Enable ESLint rule no-setter-return for all of places;N/A
+Have ADocumentChannelBridge <-> DocumentLoadListener communicate via MozPromise;N/A
+Support SHA-1 HW acceleration on ARMv8;N/A
+Make FastMarshaler always use MSHLFLAGS_NOPING;N/A
+`EditorDOMRangeBase::Contains()` does not compare end point as expected;N/A
+Support RG8 textures in SWGL;N/A
+Add a profiler marker that exposes jitter in video frame timestamps;N/A
+Support function-related scopes and resolve aliases;N/A
+Figure out how to have test_private_field_xrays.js actually run with private fields enabled.;N/A
+Add a test for 421 response;N/A
+Turn on the QPACK dynamic table;N/A
+Optimize UnsafeSetReservedSlot in CacheIR and Warp;N/A
+Remove unused ServiceWorkerManager code;N/A
+[1538348 subtask 1] Add Web Extension Downloads API stubs, GV part;N/A
+Remove Telemetry::CaptureStack, KeyedStackCapturer, and assorted machinery;N/A
+Audit usage of Document::EnumerateSubDocuments in layout for Fission;N/A
+Expose getBytesInUse to browser.storage.sync consumers;N/A
+Flip the preference to enable the new browser.storage.sync implementation;N/A
+Boolean evaluation for control for all_true, any_true, bitmask;N/A
+[socket process] improve sending data directly to child processes;N/A
+[wpt-sync] Sync PR 24731 - Streams: clean up patched globals after test;N/A
+Verify semantics for throwing private field initializers;N/A
+Move more stuff out of jsfriendapi.h;N/A
+Add a regression test to ensure that calling window.open() from a content script in a private tab does not trigger a crash;N/A
+Update opcode for bug 1653567;N/A
+"Return an ""Intel"" User-Agent string on ARM64 macOS";N/A
+Style and add missing initial print options;N/A
+Enable remaining ESLint rules on editor/libeditor/tests/*.xhtml files;N/A
+"Fix a typo in ""initalSecurityChecksDone""";N/A
+[socket process] devtools/client/netmonitor/test/browser_net_truncate-post-data.js failed with socket process enabled;N/A
+[meta] Ship BigInt <-> Int64 interconversion at JS/wasm boundary;N/A
+Optimise Reflect.getPrototypeOf in CacheIR and Warp;N/A
+Audit nsIDocShellTreeItem usage in ResetFocusState in layout/base/nsDocumentViewer.cpp;N/A
+Generalize do_QueryActor APIs with support for JSProcessActor;N/A
+Clean up some do_ImportModule calls;N/A
+UserIntractionTimer is misspelled;N/A
+Implement shared-memory support for WebAssembly on Cranelift/aarch64;N/A
+Cleanup ScopeCreationData stencil structures;N/A
+Have static clones keep track of the focused window;N/A
+Update opcode for bug 1656351;N/A
+IPC Implementation for Project FOG;N/A
+Print UI grid alignment;N/A
+Optimise Intrinsic(PossiblyWrapped)ArrayBufferByteLength, IntrinsicPossiblyWrappedTypedArrayLength, IsPossiblyWrappedRegExpObject in CacheIR;N/A
+Redesign Private Fields implementation to reduce complexity;N/A
+Write a Firefox Telemetry / FOG Compatibility Matrix;N/A
+FOG's JS API Design;N/A
+Prevent script from calling nsIWebBrowserPrint.print();N/A
+Move the print settings handling code in nsPrintJob::DoCommonPrint to after the static cloning;N/A
+Clean up nsDocumentViewer::Print;N/A
+Implement nsIPrinterEnumerator for nsDeviceContextSpecX.mm;N/A
+[meta] Clean up the print settings saving logic;N/A
+Stop creating an nsIPrintSettings in nsGlobalWindowOuter::PrintOuter;N/A
+Convert nsIPrinter.supportsDuplex to a Promise;N/A
+Convert nsFrameLoader::Print to return a Promise instead of requiring callers to pass an nsIWebProgressListener;N/A
+AVIF (AV1 Image File Format): decode with dav1d;N/A
+Update Firefox Desktop's Glean App Id to `firefox.desktop` and get it provisioned;N/A
+Warp: Optimize code emitted for a simple for-of loop;N/A
+Optimise ArrayIteratorPrototypeOptimizable and IsTypedArrayConstructor in CacheIR and Warp;N/A
+Use auto rather than repeating the type name in casts in the GC;N/A
+Make MaybeInIteration not depend on TI;N/A
+Keep BrowsingContextGroup alive throughout process switch;N/A
+Set minimum DTLS version to 1.2 again;N/A
+Add nsIWebBrowserPrint.printPreviewCurrentPageNumber;N/A
+Refactor Navigator::Share() to use Promise signature for IPC;N/A
+Enable the print.tab_modal.enabled pref.;N/A
+Provide an exception stack for uncaught promises rejections;N/A
+Land a Telemetry probe that increments a counter every time the Picture-in-Picture toggle appears;N/A
+Remove dom/events/test/pointerevents/pointerevent_on_event_handlers.html;N/A
+Use MPI comba and mulq optimizations on x86-64 MacOS.;N/A
+Add information on whether color printing is supported to the nsIPrinter interface;N/A
+Add Immediate representation for ParserAtoms;N/A
+Test which JS modules and components are loaded during subframe content process startup;N/A
+The Windows code for enumerating printers is not fit for purpose;N/A
+Compact ObjectGroups;N/A
+Hook up the headers/footers checkbox to the correct settings in the print UI;N/A
+Expose the set of ShadowRoots for a document to chrome-privileged JavaScript;N/A
+Figure out how to scale down print preview;N/A
+Telemetry about  HTTP3 usage;N/A
+Collect UTM parameters when installing an add-on;N/A
+Enable <dialog> in chrome UI for beta/release;N/A
+Figure out if GetInProcessParentDocument usage in ScriptLoader::ReadyToExecuteParserBlockingScripts is OK;N/A
+Warp: don't create ScriptCounts in Baseline;N/A
+Add remoteType to nsIDOMProcessParent;N/A
+Establish a best practice for metrics.yaml and pings.yaml in FOG;N/A
+Update opcode for bug 1655465;N/A
+Replace branchTestObject + unboxObject sequences with fallibleUnboxObject;N/A
+Display print previews in modal UI;N/A
+Teach expression decompiler about private name opcodes;N/A
+Record some telemetry about the print UI;N/A
+Deduplicate ProfileJSONWriter;N/A
+Move ObjLiteralStencil out of ScriptThingVariant;N/A
+Localize password import source-browser name;N/A
+Warp: support optimized-arguments;N/A
+Ensure Private Fields are enabled in workers, following the preference setting;N/A
+Ensure Private Fields are preserved through transplatation;N/A
+Make SIMD ad-hoc tests less ad-hoc;N/A
+Support experimental wasm SIMD opcodes supported by LLVM+V8;N/A
+Hold CSV Import to Nightly for Fx80;N/A
+Use CoreAnimation for scaling and YUV conversion of video;N/A
+Add profiler sub-categories for the GC;N/A
+Optimize some natives with template objects in CacheIR and Warp;N/A
+We unnecessarily trace wrapper rooters in mark slices;N/A
+Support Proxy Get/Has/Set ops in the transpiler;N/A
+Flip blocklist v3 preferences and uplift through ESR 78;N/A
+[META] Telemetry Probes for Credit Card Autofill;N/A
+Update print settings based on print UI state changes and send update events;N/A
+Send update events based on print UI changes;N/A
+Show print preview progress in content;N/A
+"Consider moving ""Print using the system dialog…"" below the ""Print""/""Cancel"" buttons in the new printing UI";N/A
+Audit nsIDocShellTreeItem usage in mozilla::AccessibleCaretEventHub::Init + mozilla::AccessibleCaretEventHub::Terminate in layout/base/AccessibleCaretEventHub.cpp;N/A
+Improve diffs between Fission and non-Fission reports;N/A
+Remove or update probes expiring in Firefox 82: pictureinpicture.*;N/A
+Move IsDisabled() from nsGeneralHTMLElement to Element;N/A
+Flip flags and options to let simd ride the trains, preffed-off on !Nightly;N/A
+Optimise Object.is in CacheIR and Warp;N/A
+[wpt-sync] Sync PR 24838 - Test restricted gamepad access in WPT;N/A
+WeakRef trace hook unnecessarily triggers barriers;N/A
+Match form elements with UX mocks;N/A
+Silence build warnings in SWGL linear_composite;N/A
+Implement loading interstitial state for print UI;N/A
+js::GetCodeCoverageSummary always hits release assert;N/A
+Remove setARMHwCapFlags;N/A
+Add a way to run a set of test twice, without and with fission enabled;N/A
+Run clang-format on nsCUPSShim.h;N/A
+Switch on ValueType in PrimitiveToX;N/A
+Implement form validation in the print UI;N/A
+AVX2 is not enabled in x86_64 Linux with make 4.3;N/A
+Rename nsPrintJob's mIsDoingPrintPreview to mCreatedForPrintPreview;N/A
+Warp: transpile Megamorphic* ops;N/A
+"Refactor the ""pre-account"" telemetry ping into the ""Account Ecosystem"" ping";N/A
+Decouple Stencil instantiation from FunctionBox/SharedContext;N/A
+[meta] Let wasm SIMD ride trains behind a pref;N/A
+Reduce IPC queue overhead;N/A
+Update euclid to 0.22;N/A
+Available settings, values and any defaults in UI should update to reflect the currently selected print destination (printer);N/A
+Make test_bug967796.html pass with cross-origin and Fission enabled;N/A
+Transpile AllocateAndStoreDynamicSlot;N/A
+Tracing a JS Map/Set key unnecessarily triggers a pre-barrier;N/A
+Make test_getCoalescedEvents.html pass with cross-origin and Fission enabled;N/A
+Add tests for private method support in Reflect.parse;N/A
+Update neqo to 0.4.10;N/A
+"""Assertion failure: this->sourceUnits.atStart()"" with `parse(""foo"", {module:true})` (JS shell only)";N/A
+Performance testing of HTTP3 in Firefox using only xpcshell tests;N/A
+Handle STOP_SENDING in necko;N/A
+Move string optimisations for MCharCodeAt and MCompare to GVN and handle non-Latin1 characters in LoadStringCharResult;N/A
+sweepMarkTaskStarted field duplicates existing state;N/A
+Remove obsolete nsIProfiler.AddMarker API;N/A
+Add a way to set alt-svc mapping for testing;N/A
+Move js::SourceExtent to StencilShared.h;N/A
+Lock fission.autostart on Android;N/A
+Prevent interaction with the original document under the new print preview UI;N/A
+Cancel printing if the user navigates while the new tab-modal print preview is open;N/A
+Remove is_well_formed_and_non_empty;N/A
+When printing a subdocument and using 'Save to PDF', the generated filename is wrong;N/A
+SIMD code cleanup;N/A
+Fix Wasm jit-tests expecting specific non-canonical NaN values;N/A
+[Meta] Ensure there is a corresponding session-history-in-parent compatible implementation for each (non-bfcache) nsISHEntry attribute setter;N/A
+[Doorhanger V2] Show all base domain logins in doorhanger;N/A
+Enable password import suggestions by default and remove pref-experimental code;N/A
+Warp: Transpile Function.prototype.apply arguments optimization;N/A
+Improve Assertions When Testing Printer Paper Sizes;N/A
+nsISHEntry.cacheKey setter for session-history-in-parent;N/A
+Fix browser_modal_print.js test;N/A
+Add stricter validation of DH keys when in FIPS mode.;N/A
+Implement a Promise returning nsIPrinterList.getNamedOrDefaultPrinter(lastUsedPrinterName);N/A
+Clarify Documentation for nsIPaper Interface;N/A
+MOZ_LOG `NotifyOffThreadScriptLoadCompletedRunnable` to span the JS helper thread;N/A
+MOZ_LOG schedule and run of  `mFrameLoaderFinalizers`;N/A
+MOZ_LOG schedule and run of `FrameRequestCallback`;N/A
+Update opcode for bug 1435826;N/A
+Assertion failure: !cx->isExceptionPending() with dumpStencil with smoosh+module;N/A
+Add a console log origins that have their cookies partitioned by dFPI;N/A
+Using HTTPSSVC as an AltSvc;N/A
+Upgrade Firefox 81 to use NSS 3.56;N/A
+Create a domain exclusion list for SvcDomainName that have failed;N/A
+Determine the UI and UX (visual cues) in DevTools front end for Debugging Unwanted Scrollbars;N/A
+Debug Tagging and QA Support for Project FOG;N/A
+glean_parser should generate Autodocs for FOG;N/A
+Eliminate unnecessary array copying in gfx/layers/apz;N/A
+Misc code cleanup before implementing C++ Markers 2.0;N/A
+Remove dom.disable_window_open_feature prefs from all.js/firefox.js;N/A
+Implement TabDialogBox to show dialogs on tab level;N/A
+Figure out if GetInProcessScriptableTop usage in WebSocket.cpp is OK.;N/A
+Add foldsTo support to MGuardIsNotProxy and MGuardIsNotArrayBufferMaybeShared;N/A
+[wpt-sync] Sync PR 24927 - [WPT] Refactor WebUSB tests to use test-only-api.js;N/A
+Fix nsIPrintSettings.clone() to copy all members;N/A
+Telemetry about using HTTPSSVC as an AltSvc;N/A
+Improve code generated for property additions;N/A
+Fix Linux and Mac tests under remoted WebGL;N/A
+Warp: some AddSlot optimizations;N/A
+Add non-allocating profiler_capture_backtrace(ProfileChunkedBuffer&);N/A
+Avoid merging signal slot lists in nsDOMMutationObserver::HandleMutationsInternal;N/A
+Use TabDialogBox for print UI;N/A
+Use explicit type arguments for `SyncedContext` field setters;N/A
+Remove CustomElementRegistry::AutoSetRunningFlag.;N/A
+Use IOSurface rather than Client Storage to upload software-decoded video on macOS;N/A
+Disable WebRender for ESR 78;N/A
+Update Storage Access API prompt to not declare that the third party is a tracker;N/A
+Use BrowsingContext (and IPC) in place of GetInProcessParent usage in nsGlobalWindowOuter::FocusOuter;N/A
+Allow accessing private fields via Debugger.Frame.prototype.eval;N/A
+Set a bit in the UsedNameTracker to determine if there are any private names;N/A
+Enable all ESLint rules on accessible/tests/mochitest/*.xhtml files;N/A
+Fix jsapi.h SMDOC;N/A
+Warp: transpile getter/setter calls;N/A
+Format the body of an if statement on a different line than the condition in nsFocusManager;N/A
+Add a pref to control min timeout delays in background windows before throttling has started;N/A
+Set pref `toolkit.telemetry.ecosystemtelemetry.enabled` to true by default on Nightly;N/A
+Split CompilationInfo into input, state, and output;N/A
+"Stop using ""stencil"" variable name for ScriptStencil type variable";N/A
+"HTTPSSVC: Special handling of ""."" in TargetName";N/A
+Store JSAtom in CompilationInfo instead of ParserAtom;N/A
+Remove tracing code from Stencil data structures;N/A
+Remove probe expiring in Firefox 83: dom.ipc.rejected_window_actor_message;N/A
+Implement a Promise returning nsIPrinter.createDefaultSettings();N/A
+Cleanups in js::frontend::ScopeStencil;N/A
+Avoid creating atoms for BigInt property names;N/A
+Add SMDOC for async function;N/A
+Make Vector/HashMap in CompilationInfo independent from JSContext;N/A
+Make CompilationInfo non stack class;N/A
+Support function-related stencil;N/A
+Combine ScriptStencil topLevel/funcData structures;N/A
+Implement more print settings;N/A
+Warp: support transpiling instanceof;N/A
+Warp: Transpile FunApplyArray and spread calls;N/A
+Setting default sink id on a track with no prior sink id fails an assert;N/A
+Do some cleaning in setSinkId code paths;N/A
+Prep patches for stencil-mvp;N/A
+Enable the low priority worker pool on Mac;N/A
+Add a link to a bug which explains ARM64 invalidation rules.;N/A
+Remove or update probes expiring in Firefox 80: WHEEL_*;N/A
+Transpile primitive conversion ops;N/A
+Include TI flag in bytecode cache MIME type;N/A
+Create list of locale-specific paper sizes for Save as PDF;N/A
+Use PWG standardized names in fallback paper list on GTK;N/A
+Test that browser.dns APIs don't work when the proxy should be handling DNS;N/A
+Consider to use longer timeout for slow script warning if there isn't any important user input pending;N/A
+Warp: add a browser pref;N/A
+Figure out what to do with ArrayJoinResult;N/A
+Warp: Generate arguments rectifier for trial inlining;N/A
+Various RegExp/Irregexp cleanups;N/A
+Add information on whether collation is supported to the nsIPrinter interface;N/A
+Implement caching for nsPrinterBase::CreateDefaultSettings;N/A
+Investigate the reason why [document] same-origin in /html/cross-origin-embedder-policy/reporting-subresource-corp.https.html fails outside of Nightly;N/A
+Move JSContext out of CompilationInfo;N/A
+Do not use AutoKeepAtoms;N/A
+Add tests for JS code-coverage with off-thread parsing;N/A
+Separate compilation to stencil, and instantiation;N/A
+Document JSProcessActor;N/A
+Resize print modal as the browser size changes;N/A
+Simplify representation of slots/element ranges on the mark stack;N/A
+Rework TLS usage in profiler;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in xpcom;N/A
+Add [[nodiscard]] to xpcom's Mutex and Monitor TryLock() functions;N/A
+Support MozBrowser.print passing nsIPrintSettings.kOutputFormatPDF on macOS;N/A
+Remove mozallowfullscreen.;N/A
+Don't emit post-barrier slot code in Baseline code if it's not being used;N/A
+React warning about label prop on MenuItem when opening Evaluation Context Menu;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in toolkit/components/antitracking and url-classifier;N/A
+Perma toolkit/components/pdfjs/test/browser_pdfjs_saveas.js | Test timed out -  when Gecko 81 switches to Late Beta on 2020-09-04;N/A
+Add event telemetry for when logins.json.corrupt is created;N/A
+Barrier implementations are repeated in several places;N/A
+Remove browser.link.open_newwindow=1;N/A
+Enable all ESLint rules on toolkit/**/*.xhtml files;N/A
+Create separate telemetry probes for printing with the new print preview UI enabled;N/A
+Add a destroy function to targetList;N/A
+Show external protocol dialog in TabDialogBox;N/A
+osclientcerts: differentiate between keys that can/cannot do modern crypto;N/A
+[PATCH] e2k is 64-bit architecture too;N/A
+Remove address-space segments from diffs;N/A
+The profiling stack wastes 16KB of memory due to slop;N/A
+Remove the need for multiple channels on some WebRender threads;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in dom/file;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in mozjemalloc;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in dom/xslt;N/A
+avoid passing NSS types to RootCABinNumber;N/A
+avoid using CERTCertificate in CSTrustDomain and ContentSignatureVerifier;N/A
+Cleanup stencil functions;N/A
+Don't spin the event loop in nsPrintJob::DoCommonPrint when called by extensions;N/A
+Get rid of ComponentLoaderInfo::EnsureKey() and mozJSComponentLoader::ReallyInit;N/A
+Convert PROFILER_ADD_MARKER and 2-arg profiler_add_marker to PROFILER_MARKER_UNTYPED;N/A
+Use the new frameLoader.printPreview() API in the frontend;N/A
+Implement paper size selection;N/A
+nsIPrintSettings::SetPrinterName is broken on macOS;N/A
+Document how to compile/debug Spidermonkey on android aarch64;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in security/sandbox/linux;N/A
+Remove MOZ_MUST_USE comment from NSIS BitsUtils.cpp;N/A
+Decommission the dev-telemetry-alerts@ mailing list;N/A
+glean_parser should generate Rust APIs for metrics in Project FOG;N/A
+Add a simple Thread Pool interface for HelperThreadState;N/A
+Warp: support specialized calls and inlining of lambda clones;N/A
+Refactor InitFromBailout;N/A
+Remove JS::CompileForNonSyntacticScope;N/A
+Store javascript.options.off_thread_parse_global pref value in static, instead of ContextOption;N/A
+Convert PROFILER_ADD_TEXT_MARKER to PROFILER_MARKER_TEXT;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in caps;N/A
+Improve MarkerOptions accessors;N/A
+Investigate whether nsPrintSettingsService::GetLastUsedPrinterName may fail;N/A
+Replace Debugger's Environment.callee getter with calleeScript getter;N/A
+Add support for 0RTT for HTTP3;N/A
+Avoid a second hash computation in ParserAtomsTable::lookupForAdd;N/A
+Remove traces of MOZ_ALLOW_LEGACY_EXTENSIONS from source code;N/A
+Add missing xdrEncodeTopLevel for !useOffThreadParseGlobal case;N/A
+Add a PromptTestUtils module;N/A
+avoid using CERTCertificate in nsIX509CertValidity implementation;N/A
+Add frontend::CompileLazyFunctionToStencil;N/A
+Use JS::CompileAndStartIncrementalEncoding in shell;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in hal;N/A
+Move SIPCC in to third_party;N/A
+Update neqo to 0.4.11;N/A
+Use IPHint address as nsIDNSAddrRecord;N/A
+Optimise String when called as a constructor;N/A
+Inline Object.prototype.isPrototypeOf;N/A
+Enable SubDialog chrome prompts in beta and release;N/A
+Warp: figure out what to do with JSOp::OptimizeSpreadCall;N/A
+make scriptinfo compatible with xpcshell tests;N/A
+Assert that the collector doesn't trigger barriers during marking;N/A
+Flip flags to enable Cranelift for Arm64 wasm optimizing tier;N/A
+Add a cache to fix perf cliffs when atomizing the same string(s) repeatedly;N/A
+Consider adding an nsIPrinter.systemName;N/A
+Use SystemAllocPolicy for ObjLiteralWriterBase and ObjLiteralAtomVector;N/A
+Unship ::-moz-focus-outer.;N/A
+Fix GetInProcessScriptableTop usage in pointer lock code for OOP iframes;N/A
+avoid CERTCertificate in AppTrustDomain and AppSignatureVerification;N/A
+Update OSMesa driver for WebRender;N/A
+Remove EmitResult.top_level_script;N/A
+Allow more room for DeviceCapabilities arrays for safety.;N/A
+Placement of the reply-to field in email composer in Thunderbird 78;N/A
+Change password manager tests to not use a fixed hostname;N/A
+Notification that password formfill has completed for tests to continue is sent to top frame instead of child frame.;N/A
+Enable test262 tests for private methods;N/A
+Remove `nsDocumentViewer::AppendSubtree`;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in PSM security manager;N/A
+Add ParserAtomEntry::dump;N/A
+Tab capture needs to enumerate all tabs;N/A
+Convert DOMEventMarkerPayload to new marker API;N/A
+Optimise String.prototype.replace and String.prototype.split in CacheIR and Warp;N/A
+Warp: Transpile LoadArgumentsObjectArgResult, LoadArgumentsObjectLengthResult, and LoadFunctionLengthResult;N/A
+Remove GCParallelTask finishing state;N/A
+Clear FunctionFlags::Flags::MUTABLE_FLAGS bits in frontend and avoid storing into ScriptStencil;N/A
+"Close the new print UI after the user clicks the ""Print"" button (or after ""Save"" for Save to PDF)";N/A
+Build bustage early beta /builds/worker/checkouts/gecko/toolkit/components/antitracking/StoragePrincipalHelper.cpp:351:8: error: unused variable 'ok' [-Werror,-Wunused-variable] Gecko 82 merges to Beta on 2020-09-21;N/A
+TSan: Thread data race in js::gc::ChunkBitmap::isMarked(js::gc::Cell const*, unsigned int) vs. js::gc::ChunkBitmap::getMarkWordAndMask;N/A
+Implement Pop(FloatRegister) for ARM64;N/A
+Drop cookie permission requirement for receiving the cookieStoreId property as part of the tab details;N/A
+Ship WebRender to more users in release in 81;N/A
+Figure out if the usage of nsContentUtils::GetRootDocument in FullscreenRoots is OK;N/A
+Enhance MockCubeb class to simulate audio input and verify audio output;N/A
+Helper thread tasks can get deleted while they are still running;N/A
+Allow pictures to be rendered in the opaque pass;N/A
+Replace :-moz-any() with :is() in the codebase;N/A
+Consider storing an object's dynamic slot count directly in a header;N/A
+[Doorhanger V2] pref Doorhanger V2 on in non-Nightly;N/A
+add options metadata;N/A
+Use SSE 4.1 roundsd for Math natives where possible;N/A
+Compacting GC can race when updating cells header word;N/A
+Remove nsGlobalWindowInner::mPendingPromises;N/A
+Add duplex support (print both sides) information to the nsIPrinter interface;N/A
+Convert dom.storage.next_gen from a VarCache pref to something else;N/A
+Setup a tab modal overlay for print preview UI;N/A
+Setup a basic test for the print UI;N/A
+CacheIR: Optimize function.name;N/A
+[wpt-sync] Sync PR 24982 - [weakref] WeakRef/FinalizationRegistry, cleanupSome testing;N/A
+"[wpt-sync] Sync PR 25496 - [weakref] FinalizationRegistry.prototype.cleanupSome & ""maybe"" GC interleaved with queueMicrotask, MutationObserver";N/A
+pass the embedded SCT list extension (if present) to TrustDomain::CheckRevocation instead of the notBefore value;N/A
+"Add `REL_PRELOAD_MISS_RATIO` telemetry measuring ratio of used vs unused preloads per ""as"" type";N/A
+Investigate the struct layout of  `MPSCQueue<T>::Message` on Windows;N/A
+Forwarding functions for JS::Value are unused and can be removed;N/A
+MarkerCategory only needs to store the `CategoryPair`, not the super-category;N/A
+Make conversion constant names in nsPrinterWin consistent.;N/A
+Add PK11_ImportDataKey for data object import;N/A
+Rename barrier methods to something more readable;N/A
+Gather the printing prefs together in all.js, and remove some obsolete prefs;N/A
+Convert nsFocusManager::sInstance* to a StaticRefPtr<nsFocusManager>;N/A
+Upgrade Firefox 82 to use NSS 3.57;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in libjar;N/A
+Handle Strings and null/undefined in CacheIR bitwise operations;N/A
+New  ContentDelegate#onExternalResponse(GeckoSession, WebResponse) api doesn't provide information about blobs urls files;N/A
+Add Warp to Nightly Experiments in about:preferences;N/A
+Re-engineer the reftest harness to initiate printing via the parent process;N/A
+Cleanup ParserAtomsTable::concatAtoms;N/A
+Make nsPrintSettingsService::_CreatePrintSettings pure virtual;N/A
+CacheIR: Optimize arguments[Symbol.iterator];N/A
+Align the displayport differently;N/A
+Fold GlobalHelperThreadState::finishModuleParseTask into  finishSingleParseTask;N/A
+Remove constructorName code;N/A
+Warp: tweak inlining heuristics;N/A
+Add XDR support to Stencils;N/A
+Gather telemetry on the paper sizes people print to;N/A
+Convert parser code to use const ParserAtom* from JSAtom*;N/A
+Support Incremental-XDR of Stencil structures;N/A
+Change emitLoadStubField to use int32 loads;N/A
+Add CacheIR stub for equality comparisons of any value with null/undefined;N/A
+Warp: Transpile MGuardHasGetterSetter;N/A
+pip default bugzilla component should be Toolkit :: Video/Audio Controls;N/A
+Remove more TypedObject code;N/A
+Connect time is probably wrong for http3 connections;N/A
+HTTP3 probes in cpp side to detect regressions;N/A
+Resolve with the class used to define the Custom Element;N/A
+Add function-references configuration and basic instructions;N/A
+Warp: Inline getters and setters;N/A
+Support changing print preview settings without recloning the print preview document;N/A
+Add delazified flag to ScriptStencil;N/A
+Remove the complicated parts of the multi-brush shader infrastructure;N/A
+Ship credit card autofill in Fx82 by default;N/A
+Stop allowing JS helper thread access to CHECK_THREAD APIs;N/A
+"jit-tests: change ""wasm-compiler=ion"" to ""=optimized"" and use Cranelift on aarch64";N/A
+Turn startup/worker.js targetActorMock into a real actor;N/A
+Switch default spidermonkey compiler from gcc to clang;N/A
+use async syntax for test_imestate.html;N/A
+[meta] Enable Cranelift/aarch64 WebAssembly backend on Nightly;N/A
+Use eglWaitSyncKHR() for andoid fence if possible;N/A
+Warp: Optimize MReturnFromCtor;N/A
+Enable fission.remoteObjectEmbed by default;N/A
+Warp: don't trace full snapshot for nursery GCs;N/A
+Attempt to improve the code generated for GC barriers;N/A
+Get the expiration time from a resumption token for Http3;N/A
+Support nsIPrintSetting.duplex on macOS and Windows;N/A
+rasterflood_gradient spends a lot of time in brush_opacity;N/A
+Tweak markers API: Separate category from options, marker type will be specified before payload arguments;N/A
+Add support for draft 30;N/A
+The GC traces atoms when updating moved runtime pointers during compacting GC;N/A
+Allow to switch media control feature on runtime;N/A
+support additional recommendation badges in about:addons;N/A
+Move IsCacheableDOMProxy and clean-up some includes in js/jit;N/A
+Update opcode for bug 1667258;N/A
+Handle Duplicate Paper Sizes Returned By CUPS;N/A
+Update neqo to 0.4.12;N/A
+Remove test_pointerevent_setpointercapture_inactive_button_mouse-manual.html;N/A
+[WR/EGL/Linux] Enable partial present by default;N/A
+Remove or update probes expiring in Firefox 84: REL_PRELOAD_MISS_RATIO;N/A
+Extend back-pressure telemetry probes;N/A
+Implement parsing for cross-fade() from CSS Image Values and Replaced Content Module Level 4;N/A
+Enable MASTER_PASSWORD_ENABLED probe on release;N/A
+EvalStencilXDR should handle decoding failure properly;N/A
+Improve WarpBuilder IC logic;N/A
+Perma dom/html/test/forms/test_input_event.html | beforeinput event should've been dispatched on text input element - got +0, expected 1 when Gecko 83 turns into Late Beta on 2020-10-30;N/A
+Perma shippable xpcshell.ini:toolkit/mozapps/extensions/test/xpcshell/test_system_upgrades.js | xpcshell return code: 0. when Gecko 83 merges to Beta on 2020-10-19;N/A
+Write xpcshell or mochitest to test DOMEventMarker (and others) in Firefox;N/A
+SpdyConnectTransaction::mConnInfo is unused and should be removed;N/A
+Handle wasm experimental SIMD instructions in a less ad-hoc manner;N/A
+Clean up a user's login backup when it may no longer be useful;N/A
+Security Review for FOG IPC;N/A
+Handle connection errors with ECH and HTTPSSVC;N/A
+HTTPSSVC records that advertise HTTP3 will need HappyEyeballing;N/A
+Reset SVCDomainName exclusion list when all records are exlcuded;N/A
+Check input CompileOptions when decoding, or getting from cache;N/A
+Create distinct RawInt32 type for stub fields;N/A
+Evaluate CRLite for certs older than $merge_delay;N/A
+avoid needing a CERTCertificate in nsNSSCertificate::GetSha256SubjectPublicKeyInfoDigest;N/A
+Enable some wpt session history tests on fission;N/A
+Support DocumentLoadListener-triggered toplevel process switches outside of tabbrowser;N/A
+CacheIR: Optimize global name DOM getters like bareword `document`;N/A
+Vendor Cranelift to get validate-while-parsing support;N/A
+Warp: Support transpiling Calls to special natives;N/A
+Stop updating DOMExpandoGeneration IC stub fields;N/A
+Cleanup worker-connector.js and startup/worker.js;N/A
+Pull in new wat version that can handle renamed SIMD opcodes;N/A
+Add functionality to create an `ArrayBufferObject` from an existing one;N/A
+Add printing preferences to about:support;N/A
+Remove nsIPrintSettingsService.globalPrintSettings;N/A
+Add tests to confirm that we select the right video when using the keyboard shortcut for PiP;N/A
+FOG must register its builtin pings;N/A
+Fortify code for copy&paste;N/A
+"Check volumes and integrity of ""first-shutdown"" pings after bug 1667798";N/A
+Geckoview Design for Project FOG;N/A
+Refactor heap size triggers a little;N/A
+Some minor improvements to IsAboutToBeFinalized/barriers;N/A
+Warp: pass initializer_list for IC inputs directly to the transpiler;N/A
+Add new nsIXULRuntime enum for Fission enablement/disablement status/reason;N/A
+[wpt-sync] Sync PR 24546 - Add tests for transferable streams;N/A
+Remove unused jsfriendapi functions;N/A
+Make Stencil instantiation use const references to the stencil;N/A
+Add telemetry for the various different printing entry points.;N/A
+Use ECH keys from HTTPSSVC records;N/A
+Fix edge-cases with the FissionAutostart experiment pref integration;N/A
+Warp: Optimize DOM method calls;N/A
+[META] [QA] [PI-819] QA support for Print UI Beta 82 roll-out;N/A
+Ship Webrender to more users in release in 82;N/A
+[meta] Bugs that block turning WR on Mac on Nightly;N/A
+Double-click on about:processes tab to go to that tab;N/A
+Make AutoArraySchemaWriter statically safer when not writing strings, remove unused code;N/A
+Warp: Transpile GuardFunctionIsNonBuiltinCtor;N/A
+Port menu scroll arrow behavior from macOS to Windows and Linux;N/A
+Cleanup CompilationInfo::instantiateStencils for delazification case;N/A
+Do not instantiate AbstractScopePtr in while instantiating stencil;N/A
+Decouple liftParserAtomToJSAtom from CompilationInfo;N/A
+Use ParserAtomsTable reference instead of CompilationInfo reference;N/A
+Implement dispatcher & IPC for booleans in FOG;N/A
+Migrate GeckoViewScrollChild.js to actor;N/A
+Assembler-shared.h adds mozilla::CheckedInt to the global namespace;N/A
+Migrate GeckoViewPromptChild.js to actor;N/A
+Remove various unused warning functions;N/A
+Warp: support fast Ion => Wasm calls;N/A
+Refactor public tracing interface to remove details of heap storage;N/A
+Promote accepted SIMD instructions;N/A
+Implement dispatcher & IPC for datetimes in FOG;N/A
+Add new FrameLoader.printPreview() API to eliminate message passing codepaths;N/A
+Add Fission status to about:support's Decision Log, including why it is or is not enabled;N/A
+Speed up Atomic jsapi-tests by reusing cx+global;N/A
+Warp: Transpile CacheIR instructions for DOM expandos;N/A
+jsapi-tests subtests have very high overhead;N/A
+Re-consider glean-sdk / FOG API split;N/A
+EncodedFrame ctor doesn't initialize all members -- clean it and OpusTrackEncoder up;N/A
+Document Dispatcher and IPC details for adding new metric types;N/A
+Remove non-commutative Timespan commands from FOG IPC;N/A
+Remove or update probes expiring in Firefox 84: WEBEXT_*;N/A
+GCManagedDeletePolicy is obscure and doesn't work for GCPtr<Value>;N/A
+Assertion failure: !zone->needsIncrementalBarrier() || zone->isAtomsZone(), at gc/Verifier.cpp:311;N/A
+Remove Base Profiler PayloadMarker and all dependencies;N/A
+Allow FOG metrics to expire on app version, not build date;N/A
+Re-enable some tests that are now succeeding with session history in parent and Fission;N/A
+Consider using separate attribute to store first-party domain for dFPI;N/A
+Enable dav1d assembly builds in Android;N/A
+[css-grid-3] Land initial Masonry draft spec in tree for internal reviewing purposes;N/A
+Don't collect MEMORY_UNIQUE_CONTENT_STARTUP for the privileged process;N/A
+Replace all uses of JSWindowActor willDestroy with didDestroy;N/A
+Make WebRender's integrated profiler more configurable;N/A
+Show HTTPS RRs in about:networking;N/A
+Make `dom/cache` buildable outside of `unified-build` environment;N/A
+The new marker API needs a way to record a marker on the main thread track;N/A
+Add a telemetry to see how often we restart a transaction;N/A
+String creation functions don't always pass the initial heap parameter through;N/A
+Instrument Firefox Desktop window focus and blur;N/A
+Cranelift: test failures when tiering on aarch64 simulator;N/A
+Implement private static methods proposal;N/A
+Collect telemetry on potential slow script dialog cases in the parent process;N/A
+[mozlog] Add group durations to errorsummary formatter;N/A
+Re-enable some tests that are now succeeding with session history in parent and Fission;N/A
+Profiling tests that trigger private browsing should be possible;N/A
+Profiler markers showing stacks of thread creations happening off main thread would be useful;N/A
+change 'test_audioNotification.html' to browser test and move it to dedicated folder.;N/A
+change 'test_audioNotificationSilent_audioFile.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_audioNotificationWithEarlyPlay.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_audioNotificationStopOnNavigation.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_audioNotificationStream.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_audioNotification_pauseBeforeReload.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_audioNotification_reloadMedia.html' to browser test and move it to the dedicated folder.;N/A
+Multi-language architecture Implementation;N/A
+Tab modal print UI a11y review;N/A
+Create a BrowsingContext helper function for IsSameOrigin;N/A
+Implement dispatcher & IPC for Events in FOG;N/A
+change 'test_noAudioNotification.html' to browser test and move it to the dedicated folder.;N/A
+"Simplify the""Cookies"" string for cookieBehavior=5 in about:preferences#privacy";N/A
+CERT_AddCertToListHeadWithData and CERT_AddCertToListTailWithData are not exported from libnss;N/A
+Add jitsrc command to js/src/gdb;N/A
+Update neqo to 0.4.13;N/A
+Profiler markers showing stacks of thread creations would be useful;N/A
+Remember whether a server is speaking HTTP3;N/A
+Expose the BC's HistoryID field through WebIDL;N/A
+Place glyphs into their own texture array;N/A
+Implement dispatcher & IPC for Memory Distributions in FOG;N/A
+Implement dispatcher & IPC for String Lists in FOG;N/A
+Make IsPackedArray not depend on TI;N/A
+WR profiler followup fixes and tweaks;N/A
+[meta] BrowsingContext Preservation - QA bug tracking;N/A
+Request an accessibility review of credit card autofill;N/A
+Remove uses of GetInProcessScriptableTop in WebSocketImpl::GetLoadingPrincipal;N/A
+Remove the Annotations Service API;N/A
+Remove unused DeclarationBlock::get_at_importance.;N/A
+Don't print out nsISupports in XPCWrappedNative::ToString() unless it is the only interface;N/A
+Enable ESLint no-unused-vars and no-undef rules on widget/test/*.xhtml files;N/A
+Lower SIMD instructions so as to respect register preferences;N/A
+Use bitwiseAndSimd128(SimdConstant, reg) and similar to lower register pressure;N/A
+Lower SIMD compares so as to respect predicates available in hardware;N/A
+Reserve CompilationAtomCache.atoms before instantiation;N/A
+Reserve vectors in CompilationGCOutput off-main-thread;N/A
+Use moveSimd128 uniformly + avoid double guards;N/A
+Centralize ParserAtoms instantiation;N/A
+Generate better code for v128.load32_splat and v128.load64_splat;N/A
+Generate better x86 code for v128.loadNxN_{S,U};N/A
+Remove pre-SSE4.1 SIMD code paths;N/A
+Texture cache allocation debugging;N/A
+Simplify marking of slots value ranges;N/A
+Migrate FileIO markers to markers 2.0;N/A
+define platform macros for arm64 macOS in the profiler;N/A
+Migrate GeckoViewSelectionActionChild.js to actor;N/A
+Split and isolate every chunk in `test_dom_input_event_on_htmleditor.html` and `test_dom_input_event_on_texteditor.html`;N/A
+Update tooltip text for add-on badges;N/A
+Create a disnative command for the JS Shell that provides the disassembly of a jitted function;N/A
+Add the ability to remotely exempt urls from partitioning;N/A
+Update target URL for add-on badges;N/A
+Margin/padding differences between the twisties and favicons, in about:processes vs. about:performance;N/A
+Rebuild cert-info when a resumption token is used for HTTP3;N/A
+[HTTPSSVC] Create speculative connection for the first service mode record;N/A
+Transpile TypeOf ICs;N/A
+Add a test to ensure loopback host names cannot be overridden;N/A
+Some MoveDenseElements cleanup;N/A
+Replace legacy actor with JSWindowActorChild for PrintingChild;N/A
+Do not return function that ends before the specified line in findScript;N/A
+Use PrivateValue instead of Int32Value for ArrayBuffer{View} length and offset slots;N/A
+Remove toggle experimentation code now that we've settled on Mode 2.;N/A
+Merge print recording targets from cross-origin iframes;N/A
+NativeObject methods sometimes specifies slot ranges with start and end index, sometimes with start and length;N/A
+Remove nsIBrowserDOMWindow.OPEN_SWITCHTAB.;N/A
+Project FOG M5 Test Checkup;N/A
+Remove willDestroy JSWindowActor method and update docs;N/A
+Implement dispatcher & IPC for UUIDs in FOG;N/A
+[META] [QA] [PI-835] DNS-over-HTTPS usage rate study;N/A
+Convert nsPrintSettingsX to do something like nsPrintSettingsWin::CopyFromNative/CopyToNative;N/A
+apply default browser test eslint for media control browser tests;N/A
+Use length of first DeviceCapabilities array count for paper information to allocate space for the others;N/A
+Warp: Trial Inlining Prototype;N/A
+Create git repo for libwebrtc build scripts;N/A
+Create git repo for libwebrtc;N/A
+Simplify TypedObject optimised marking path;N/A
+Assertion failure: !marker->tracingZone, at gc/Marking.cpp:504 with TypedObject and BigInt;N/A
+Fix uses of format with print in AWSY;N/A
+In about:processes, the `browser` process should display `residentSetSize` rather than `residentUniqueSize`;N/A
+Store dense and TypedArray index in PropertyResult;N/A
+Optimise double modulus with power of two divisor;N/A
+Make some functions in nsHttpConnectionMgr private;N/A
+Remove noscript methods in nsIFocusManager;N/A
+Optimize Math.{min, max} in CacheIR and Warp;N/A
+Add telemetry for restarting a transaction when echConfig is used;N/A
+Clarify that wasm memories are 32-bit wasm memories + decouple mem limit from buffer limit;N/A
+Add the SwComposite thread to all the presets;N/A
+Change ArrayBuffer{View} offset/length accessors to return a wrapped size_t;N/A
+Convert nsIPrinterList.printers to a Promise so getting the printers doesn't block;N/A
+Deduplicate UniqueJSONStrings and avoid raw string pointers;N/A
+Warp: fix code TODOs;N/A
+Better separate NS_HTTP_DISALLOW_HTTP3 and NS_HTTP_DISALLOW_SPDY when choosing a connection for the connection pool;N/A
+Remove import suggestions on user opt-out or automatically;N/A
+Add Wycheproof test cases for HMAC, HKDF, and DSA to NSS;N/A
+Add comment about minimizeMemoryUsage being async;N/A
+Upgrade gcc from 9.1.0 to 9.3.0;N/A
+We should disable HTTP3 if NS_HTTP_ALLOW_KEEPALIVE is not set;N/A
+HTMLEditorDeleteHandler.cpp: redundant continue statement at the end of loop statement;N/A
+change 'test_noAudioNotificationOnMutedElement.html' to browser test and move it to the dedicated folder.;N/A
+Add SpiderMonkey-side artefacts to support Wasm Atomics on Cranelift/newBE/AArch64 (CL PR2077);N/A
+Add a shell flag for enabling large ArrayBuffers;N/A
+Analyze usage of SharedImmutableScriptData;N/A
+Reduce allocations in merge_rrset;N/A
+change 'test_audioNotificationNavigationWebAudio.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_audioNotificationSilent_webAudio.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_noWebAudioNotification.html' to browser test and move it to the dedicated folder.;N/A
+change 'test_webaudioNotification.html' to browser test and move it to the dedicated folder.;N/A
+Do not use HTTP3 for OCSP request;N/A
+[META] Stop using l10n fixtures/shims in our Node tests;N/A
+Move all autoplay related codes and tests into a subfolder under `dom/media`;N/A
+Create test harness for SIMD code generation tests;N/A
+Cleanup some code around nsFocusManager::mFirst{Blur|Focus}Event;N/A
+[Meta] change mochitests using `audio-playback` to browser test;N/A
+Remove or update probes expiring in Firefox 85: addonsManager.*;N/A
+Split ParserAtomTable into vector and index map;N/A
+Add LifoAlloc to CompilationStencil;N/A
+Add fast-path of AtomizeChars in ParserAtomEntry::toJSAtom;N/A
+Pass SpliceableJSONWriter to StreamJSONMarkerData, and attach UniqueJSONStrings;N/A
+nsCertOverrideService should only block shutdown when a write is pending;N/A
+Make it easier to write fission hit-testing tests;N/A
+[warp] Hit MOZ_CRASH(Mutex ordering violation) at threading/Mutex.cpp:32;N/A
+Make child process to send offset to parent process, not index;N/A
+Add support for setting custom margins to the new print preview UI;N/A
+Use reference count for ScriptStencil.immutableScriptData;N/A
+Add tests for automatic source-compression after JS parsing;N/A
+Implement dispatcher & IPC for Pings in FOG;N/A
+Put all webvtt related codes and tests to `dom/media/webvtt`;N/A
+Remove unused ObjectActor.definitionSite;N/A
+Make sure http channel uses the latest connection info for sticky transaction;N/A
+"Enable EV Treatment for ""IdenTrust Commercial Root CA 1"" root certificate";N/A
+Enable EV Treatment for SecureTrust's Trustwave Global root certificates;N/A
+Warp: Make transpiled call instructions depend on argument guards;N/A
+"WPT failure in MediaRecorder-stop.html: MediaRecorder will fire start event even if stopped synchronously - promise_test: Unhandled rejection with value: object ""TypeError: can't access property ""getUserMedia"", navigator.mediaDevices is undefined""";N/A
+Enable cookie purging by default in Release;N/A
+Sanity check OffThreadToken passed in from the browser;N/A
+Only disable incremental barriers when necessary inside the GC;N/A
+Fission: Support printing content with OOP iframes;N/A
+Enhance Movi masm function to generate better code for SIMD constant loads;N/A
+Let FOG ride the trains;N/A
+Store native object private fields using PrivateValue();N/A
+Enable Warp in Nightly;N/A
+Show tab chrome prompts in TabDialogBox;N/A
+Support software compositing for SWGL;N/A
+Create a websocket test to make sure we don't send a duplicate packet;N/A
+Unable to fix corrupted MS-Exchange message if opened from a saved local file;N/A
+Cleanup Http3Session::ReadSegments and add tests;N/A
+Remove nsIDocShell::GetInterface(nsISHistory);N/A
+Make sure that we always disable HTTP3 if a error occurs;N/A
+Merge the paths for running hazard analysis locally and in automation;N/A
+Convert IMPL_MUTATION_NOTIFICATION to an inline function;N/A
+Measure the HttpTransaction's  performance over HTTP3;N/A
+Move used-by-stencil bit to separate field;N/A
+Encode all ParserAtoms at the beginning in XDRIncrementalStencilEncoder;N/A
+Merge AtomIndex and ParserAtomIndex;N/A
+Set mSupportsHttp3 in the child process as well;N/A
+Remove obsolete resolutionchange handling from LightweightThemeConsumer.jsm;N/A
+Un-bundle reps;N/A
+Reduce FuntionMap size in CompilationInfoVector;N/A
+Use tagged index in ScriptThingVector;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in docshell;N/A
+Limit SwCompositeThread overhead;N/A
+remove old certificate viewer;N/A
+Update to neqo 0.4.14;N/A
+ORPC profiler markers would be more useful if they contained more information;N/A
+Split test_sessionhistory.html test;N/A
+Count number of bytes sent and received on a socket;N/A
+Refactor use of CharBuffer in TokenStream;N/A
+Have nsPrinterCUPS::TryEnsurePrinterInfo return a DataMutex::AutoLock;N/A
+Show echConfig as hex string in about:networking;N/A
+Update how we parse SvcParamKeyAlpn;N/A
+Reenable some tests that are now succeeding with Fission;N/A
+Move NetDashboard.webidl to dom/chrome-webidl;N/A
+Capture C++ stacks and markers from the Android UI thread;N/A
+Measure page performance over HTTP3;N/A
+Add a CRLite preference/mode to not evaluate OCSP;N/A
+Extend browsingData.remove API to remove a subset of data with cookieStoreId;N/A
+Use ParserAtom index in stencil;N/A
+Update browser_deleteLoginsBackup test due to new remove all logins functionality;N/A
+Validate FOG in Nightly;N/A
+[Doorhanger V2] update doorhanger edit telemetry to account for autocomplete;N/A
+Make the rest of `dom` buildable outside of `unified-build` environment.;N/A
+KeyPress composition payload tracking could be more reliable (it's not handling pending style / layout flushes);N/A
+Implement SessionHistoryEntry::Get/SetHasUserInteraction;N/A
+"Rename ""Java Main Thread"" to ""AndroidUI (JVM)""";N/A
+Create a jsapi-test test case to collect all CallWithABI signatures.;N/A
+Implement HappyEyeballing for HTTP3 so that we fail faster in case of UDP blocking;N/A
+Don't use the record whose target name is in Http3 excluded list;N/A
+[meta] gfx-83;N/A
+First step in refactoring nsHttpConnectionMgr;N/A
+Use ThrowStateError with useful message in JSWindowActorChild;N/A
+Update Cranelift to firefox85 / dcc52ba3f69d3de7cdbd787b936825d9c61e3c27 and wasmparser to 0.67;N/A
+Optimize compare with immediate zero on zero/nonzero;N/A
+Move WritePropertyTime to SpliceableJSONWriter;N/A
+remove unnecessary subject/subject alternative name baseline requirements telemetry;N/A
+Migrate remaining marker payloads to 2.0 API;N/A
+Update neqo (0.4.15);N/A
+Remove E10SUtils.shouldLoadURI;N/A
+Bump the profile format version to launch Marker Schema;N/A
+Clean up GeckoProfiler includes;N/A
+Move URLParams to a more general place;N/A
+Use sheetCount rather than calculated the number of rendered pages;N/A
+[meta] Convert existing ProfilerMarkerPayload's to markers 2.0 definitions;N/A
+Validate the page range setting;N/A
+Remember whether a HttpChannel and HttpTransacion use http3;N/A
+Move `UserActivationState` from BrowsingContext to WindowContext;N/A
+Allow XDR of CompilationStencil within ScriptLoader;N/A
+Remove BinAST prototype;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in StreamFilterParent;N/A
+Stop using texture arrays in the texture cache;N/A
+Enable Cranelift as a compiler for wasm on AArch64 targets;N/A
+Update CodeMirror to 5.58.1;N/A
+"""Undo Close Tabs"" does not restore multiple tabs when ""tabs.remove()"" closed multiple tabs";N/A
+Cranelift: aarch64 simd support;N/A
+Remove some unused safepoints;N/A
+Remove dead code in CheckHasNoSuchProperty and unused parameter LIRGeneratorShared::buildSnapshot;N/A
+Move Serializer code in dom/base/ to dom/serializers/;N/A
+"Make marker type names consistent, with ""Marker"" suffix";N/A
+Move handling of !important rules in @viewport to somewhere more general;N/A
+Make browsingData.removePluginData() API a no-op;N/A
+Record an error if Uuid::parse fails in the MLA FFI;N/A
+Remove FakeHistory and gHistory from extensions.js;N/A
+Stop registering gViewController in window.controllers;N/A
+"Fix some ""detroyed"" typos";N/A
+Warp: Transpile remaining sparse elements CacheIR instructions;N/A
+[Fission] Enable history.https.sub.html and navigation-in-onload.tentative.html;N/A
+Stop calling `LoadFrame` from nsFrameLoaderOwner::ChangeRemoteness*;N/A
+Add assertions to check that we don't leak arenas;N/A
+Stop using CallNonGenericMethod for RegExp.prototype getters;N/A
+Remove failure check for CheckAndCreateBloatView() and rename it.;N/A
+Update Module implementation to more recent revision;N/A
+Enable fractionalSecondDigits option support in Intl.DateTimeFormat;N/A
+Add telemetry pings for media control;N/A
+Make some perf telemetry probes available in the Release channel (for Fission experiment);N/A
+Explicitly instantiate often-used profiler templates;N/A
+[1538348 subtask 5]  Cancelling downloads on certain HTTP status codes - add support to WebExecutor;N/A
+"Replace all user-facing instances that refer to ""master"" password";N/A
+Vendor in CL ac58a436ed84d1a88b4ff24367c5972cf8d3d405;N/A
+Add an nsIPrintSettings API that frontend code (print.js) can use to provide a set of non-contiguous print ranges;N/A
+Wire up echConfig to NSS;N/A
+Remove the UserActivationState field on BrowsingContext;N/A
+bypass 3rd party install panel for recommended addons;N/A
+Update test262 to latest;N/A
+Disable WPTs for navigation-reporting until we actual support this feature;N/A
+Include ModuleObject.h, WasmJS.h, and JSFunction.h from Scope.h;N/A
+Investigate tighter texture atlas packing for glyphs;N/A
+Most extension xpcshell tests (e.g. xpcshell-common.ini) are skipped on Android x86-64;N/A
+Enable CFG for Rust code;N/A
+Remove Pref to Disable Symantec Distrust;N/A
+Implement JSOp::InitElemArray without ICs;N/A
+Make ObjLiteralStencil initialization in BytecodeEmitter more robust;N/A
+Misleading log: Reading manifest: Invalid extension permission: geckoViewAddons;N/A
+Directly use TaggedParserAtomIndex in ObjLiteral code;N/A
+Make CompilationStencil.moduleMetadata optional;N/A
+Make the BoxModelHighlighter compatible with Fission;N/A
+Remove obsolete CGEvent logging workaround added for Mac OS X 10.10.2;N/A
+Remove some more unnecessary #includes;N/A
+Add more JSON checks in Gecko Profiler gtests;N/A
+Update error message for add-ons try to use storage.sync with a temporary ID;N/A
+Allocate strings in the nursery in a few more places;N/A
+Add a test for string allocation in the nursery;N/A
+Move experimental methods for `SourceBuffer` to partial interface;N/A
+Warp: Check wasm argument types in CacheIR;N/A
+Create initial, minimal UI to select and adjust printer & print settings;N/A
+Enable desktop zooming for release builds;N/A
+Update dtoa-short.;N/A
+Reuse CompilationGCOutput across delazifications in CompilationInfoVector::instantiateStencils;N/A
+Centralize LifoAlloc for initial stencil and delazifications in CompilationInfoVector;N/A
+Fully-parsed and optimized out function's ScriptStencil doesn't contain correct data;N/A
+Don't call Truncate() on the return string in GetPropertyValue.;N/A
+Update opcode for bug 1673553;N/A
+Remove JS_MORE_DETERMINISTIC in favor of a runtime option;N/A
+Resolving `dom::Promise` from rust would be cool.;N/A
+Optimize more intrinsics in CacheIR and Warp;N/A
+Fix test_prompt_promptAuth_proxy.html for e10s;N/A
+Add a ToJSValue overload for nsACString;N/A
+Update RequestDestination to the latest spec;N/A
+[meta] Wasm SIMD on aarch64;N/A
+Remove prompts.tab_modal.enabled pref;N/A
+Reduce unnecessary includes around structured clones;N/A
+Implement C++ and JS APIs for the Memory Distribution Metric Type;N/A
+Ship Intl.DisplayNames;N/A
+"Add HTTP3  to about:preferences' ""Nightly Experiments"" section";N/A
+Remove deprecated ContentDelegate.onExternalResponse;N/A
+Use tagged index in ParserScopeData;N/A
+Continue refactoring CC/GC scheduling;N/A
+enable osclientcerts by default in early beta;N/A
+Directly encode/decode RegExpStencil vector at once;N/A
+Merge paths in GMP IPC code the handle node ID as strings and structs;N/A
+Directly encode/decode ParserAtomEntry at once;N/A
+js/src/jit-test/tests/modules/bug-1233117.js: warning: unrecognized |jit-test| attribute module --enable-top-level-await;N/A
+Add a temporary telemetry for QM's temporary storage initialization time;N/A
+Assert pointer is aligned to Value size in Poison functions;N/A
+Ping name is not yet optional in JS and C++ Testing APIs;N/A
+Move CC/GC scheduling to separate header;N/A
+Split the SIMD ad-hack tests;N/A
+Enable pages per sheet by default;N/A
+Use UTF8String for CSSOM serialization.;N/A
+Import logins from Keepass(XC);N/A
+Actually, JS categories and metrics should be camelCase, not snake_case;N/A
+Remove unused MCompare compare types;N/A
+Assertion failure: !outerScript->hadEagerTruncationBailout(), at jit/BaselineBailouts.cpp:2029;N/A
+arm64: add debug-only high-bits-are-zero check in boxValue;N/A
+Audit DTLS async certificate verification;N/A
+Move RefPtr out of ScriptStencil;N/A
+Enable wpt tests related to Top Level Await;N/A
+Implement dispatcher & IPC for Timing Distributions in FOG;N/A
+Add whether User CET is available into the the Telemetry Environment on Windows;N/A
+Gather various statistics related to strings;N/A
+Change tests which fail when fission and session-history-in-parent are enabled from skip-if to fail-if;N/A
+Update neqo to 0.4.19;N/A
+Warp: Make Number.is{Safe}Integer inlinable again;N/A
+[1538348 subtask 2] Implement downloads() function;N/A
+bypass 3rd party install panel for privileged addons;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in js/src/jit/;N/A
+Make a GC microbenchmark shell test suite;N/A
+Make fully-packed subset of scope AbstractData for stencil;N/A
+"Add ""cpu"" experimental Profiler feature";N/A
+Enable ESLint rule no-async-promise-executor on the remainder of the tree (mainly dom/);N/A
+Make `docshell` buildable outside of `unified-build` environment.;N/A
+Make `editor` buildable outside of `unified-build` environment.;N/A
+Rename FunctionIndex to ScriptIndex, and use ScriptIndex instead of ScriptStencil;N/A
+Remove MToObjectOrNull?;N/A
+Consider renaming eTopLevel/eChild to ePlatformTopLevel/ePlatformChild;N/A
+Implement C++ and JS APIs for the String List Metric Type;N/A
+Preforrm HTTPSSVC query in DNSPrefetch and HTMLDNSPrefetch service;N/A
+Remove using Parser*ScopeData aliases and use *Scope::ParserData;N/A
+Rename *Scope::Data to *Scope::RuntimeData or something;N/A
+Add base template class for each `*Scope::Data`, and also for each `*Scope::ParserData`;N/A
+Unmark arenas concurrently with mutator at the start of GC;N/A
+SIMD wormhole;N/A
+Use 1:1 texture sampling with swgl when possible;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in toolkit/components/antitracking;N/A
+CacheIR: Support int32 OOB access on TypedArrays;N/A
+Remove or update probes expiring in Firefox 87: FX_PICTURE_IN_PICTURE_WINDOW_OPEN_DURATION;N/A
+Move non-GC-related allocation/calculation off-main-thread;N/A
+Implement a paginator for the print preview;N/A
+Remove AbstractScopePtrIter;N/A
+Replace Vector with Span into LifoAlloc;N/A
+Make sure https upgrade with https rr is really working;N/A
+Shrink unused nursery space in idle time;N/A
+Implement Warp Compiled Async Functions;N/A
+Adapt Datetime to its RLB implementation;N/A
+Assert that the register field of LUse can represent every register;N/A
+Remove window IDs from event-counts in diffs;N/A
+Move some of the texture cache atlases to a shelf allocator;N/A
+Major GC collects the nursery more often than necessary;N/A
+remove dead code from nsCertTree;N/A
+Use GeckoResult in EventDispatcher;N/A
+Stop deleting key3.db in Firefox init;N/A
+Move gcThings span out of ScriptStencil;N/A
+Make ScriptStencil packed;N/A
+Move pointer out of ScopeStencil, make ScopeStencil packed, and encode at once;N/A
+Remove IonBuilder and TI;N/A
+Track FX_NUMBER_OF_UNIQUE_SITE_ORIGINS high water mark for Linux users;N/A
+Make osfile.reset_worker_delay consistent across branches;N/A
+Minor tweak to a comment;N/A
+CacheIR: Optimize TypedArray length;N/A
+Use consistent namespace in nsHtml5TreeBuilderCppSupplement.h;N/A
+Enable new regexp engine;N/A
+Disable some tests intermittently failing with sessionHistory and Fission;N/A
+Telemetry Mentored Bug Template needs a little updating;N/A
+Move browser/ references to toolkit/;N/A
+Move `AdjustForStartTime()`  out from `MediaData`;N/A
+Gather the channel successful rate when https rr is used;N/A
+Replace MOZ_MUST_USE with [[nodiscard]] in js/src/wasm/;N/A
+Add support for executing JS shell with self-hosted code loaded from stencil XDR;N/A
+Expose `glean::ErrorType` from FOG;N/A
+Remove or update probes expiring in Firefox 87: exp_import.*;N/A
+Don't disable the nursery when creating the self hosting zone;N/A
+Simplify ShouldMark predicate a little;N/A
+Update rayon to 1.5;N/A
+ScriptStencil.nargs is 0 for delazification;N/A
+Introduce initial-specific struct to reduce delazification size;N/A
+Add lifetime requirement for TranscodeRange and TranscodeBuffer;N/A
+Add alignment requirement for TranscodeRange and TranscodeBuffer;N/A
+Move immutableFlags to ScriptStencilExtra;N/A
+Make more code work with large ArrayBuffers;N/A
+Remove legacy page-range codepath (and bring the new skip-during-reflow codepath up to feature-parity with it, so it supports non-contiguous page ranges);N/A
+Update neqo to 0.4.18 and bindgen to 0.56;N/A
+Enable ESLint no-unused-vars rule for netwerk/cookie/test and netwerk/test;N/A
+Enable https upgrade with https rr on nightly and beta;N/A
+Directly use XDR buffer from decoded stencil;N/A
+Change WASMDOC tags to SMDOC;N/A
+Add SMDOC for JS Stencil data structures and infrastructure;N/A
+Move CompilationStencil.{moduleMetadata, asmJS} out of CompilationStencil;N/A
+Refactoring: Make SIMD code cross-platform;N/A
+Update etagere dependency to 0.2.4;N/A
+Consider not saving the character encoding on cache entries;N/A
+experiment to see whether we could retroactively disallow duplicate imports;N/A
+nsJSProtocolHandler.cpp: do not use 'else' after 'return';N/A
+Use object literal for JSON dump for array where its elements are referred by index;N/A
+Use a semaphore to track the number of running instances of an installation so we can prevent updating a running instance out from under it;N/A
+Low level HTTP3 telemetry;N/A
+CacheFile.cpp: do not use 'else' after 'return';N/A
+Make structured cloning work with large array buffers;N/A
+Use actual format in XDR version check;N/A
+Improve stencil XDR decode + instantiation performance;N/A
+Implement C++ and JS APIs for the Timing Distribution Metric Type;N/A
+Remove the Rust dispatcher from FOG;N/A
+Remove unused MIR nodes, MBasicBlock methods, and enums;N/A
+Remove some test_wpt_test_* which are no longer manual test in wpt and we could pass the wpt one;N/A
+Stop computing the ContentBlockingAllowListPrincipal for sub-documents;N/A
+Increase maximum bytecode size when trial inlining self-hosted functions;N/A
+Audit ViewportUtils::GetVisualToLayoutTransform for fission;N/A
+Investigate calling .contentWindow.focus() on an OOP iframe that has presently-unfocused ancestor iframes;N/A
+All-process Rust API implementation;N/A
+Leave stencil instantiation off-main-thread for script decode task;N/A
+Modify manual wpt pointerevent_releasepointercapture_release_right_after_capture-manual.html to use WebDriver;N/A
+Modify manual wpt pointerevent_setpointercapture_override_pending_capture_element-manual.html to use WebDriver;N/A
+Modify manual wpt pointerevent_setpointercapture_to_same_element_twice-manual.html to use WebDriver;N/A
+Modify manual wpt pointerevent_element_haspointercapture_release_pending_capture-manual.html to use WebDriver;N/A
+"Disallow variable name ""async"" in for-of loops";N/A
+Tidy up debug output with IONFLAGS=, especially IONFLAGS=all;N/A
+Avoid redundant move when extracting lane 0 of f64x2 or f32x4 into the same register;N/A
+Use WebAssembly's type system for TypedObject's;N/A
+[meta] Disable plugin support;N/A
+Add telemetry probe for knowing more details about audio competition;N/A
+Simplify zeal conditions and logging;N/A
+remove isSelfSigned from nsIX509Cert;N/A
+Remove IonBuilder and TI, part deux;N/A
+remove unused CertBlocklist implementation and MOZ_NEW_CERT_STORAGE build variable;N/A
+Telemetry about nsHttpChannel success rate with HTTP3;N/A
+Make more typed array code work with large buffers;N/A
+Span's size takes 4 bytes for each delazification, even if it's empty;N/A
+Add a build flag to allow building nssckbi-testlib in m-c;N/A
+Data Review Request for Fission subframe crash reporter;N/A
+avoid CERTCertificate in nsNSSCertificate::GetDbKey;N/A
+Encode decode StencilModuleEntry at once;N/A
+[Fission] Consider OriginAttributes when selecting processes;N/A
+Fixing the WPT 'unset_context_name.html';N/A
+Lifecycle Design for Project FOG;N/A
+Enable the CPU feature by default for startup profiling;N/A
+Use JSCVT on macOS/aarch64;N/A
+Remove padding from Chunk data structures;N/A
+Rename chunk data structures that are only used by the tenured heap to clarify this;N/A
+Small cleanup around private names;N/A
+Remove ConversionKind::NonNullNonStringPrimitives;N/A
+ChromeUtils.addProfilerMarker should support capturing a stack and setting the category;N/A
+Remove knowledge of concrete representation of registers' SetType;N/A
+land initial preffed off implementation of direct manipulation;N/A
+Cleanup CompilationStencil instantiation code;N/A
+Enable dFPI in strict mode for beta and release channel;N/A
+Parse odohconfig in https rr;N/A
+Replace mozilla::{ArrayLength,ArrayEnd} with STL functions;N/A
+Improve assertions about nursery forwarding pointers;N/A
+Refactor chunk data structures to inherit from a common base class;N/A
+Some semantic improvements for `timeupdate` dispatchment part;N/A
+Rename sweepMarkTask in preparation for concurrent marking;N/A
+Warp: Eliminate bailout loops;N/A
+WebAssembly.Table API doesn't support ref-types correctly;N/A
+Consider merging cache/alloc for initial and delazifications in CompilationStencilSet;N/A
+Update wat to 1.0.33;N/A
+Import logins from Firefox login export CSV files;N/A
+Replace the GC mode with two GC parameters;N/A
+Allocate vector/map variant of SharedDataContainer on heap;N/A
+Investigate storing chunk metadata as a header at the start of the chunk;N/A
+Enable Warp Compiled Generators and Async Functions;N/A
+remove subjectAltNames from nsIX509Cert;N/A
+Add a way to trigger the encoding detector from the menu;N/A
+Remote 2D canvas rides again;N/A
+Enable implicit pointer capture for touch on Nightly channel;N/A
+Update ECH implementation to draft-09;N/A
+Rename ScopeCreationData::create to different name for each input;N/A
+Add testing function to dump stencil;N/A
+"Implement SIMD ""i32x4 -> i64x2 widen"" instructions";N/A
+"Implement the SIMD ""Saturating rounding q-format multiplication"" instructions";N/A
+"Implement the SIMD ""i64x2.bitmask"" instruction";N/A
+"Implement the SIMD ""v128.any_true"" instruction, remove ""iNxM.any_true""";N/A
+Replace ErrorResult::Throw(NS_ERROR_DOM_*) with Throw*Error in Selection;N/A
+Don't export symbols from irregexp;N/A
+shadowrootattached is too slow;N/A
+Checking whether a host is in IsHttp2Excluded/IsHttp3Excluded list when selecting AltSvc;N/A
+Execution of runnables should be shown with markers;N/A
+Get rid of `dom.w3c_pointer_events.enabled` pref;N/A
+Clean up unused esni code;N/A
+[meta] Support off-thread JS parsing during Atoms-Zone GC;N/A
+"Investigate implementation of fallback ""slicing"" fragmentation using display list";N/A
+Refactor NurseryDecommitTask so that Chunk doesn't need to know about it;N/A
+Enable ESLint rule no-setter-return on the rest of the tree;N/A
+Remove unused variable `mPlatform` and `mEncryptedPlatform` from MFR;N/A
+Implement new C++ way to define marker types;N/A
+Get rid of plugin support of IME/keyboard handling;N/A
+"Implement the SIMD ""extended multiplication"" instruction";N/A
+Consolidate the conditions about initial/delazification between FunctionBox and Parser;N/A
+Remove expired Scalar `browser.engagement.restored_pinned_tabs_count`;N/A
+Warp: Re-enable the LPowI optimisation;N/A
+Simplify gViewController now that there are only htmlViews;N/A
+Remove or update probes expiring in Firefox 81: extensions.data.storageLocalError#storageLocalError;N/A
+Remove or update probes expiring in Firefox 80: STORAGE_ACCESS_API_UI;N/A
+Add some telemetry to measure how long it takes to collect printer information;N/A
+Remove activation behavior and :link/:visited/:any-link matching for <link>s;N/A
+Clean up null checking around PerformanceResourceTiming::mTimingData;N/A
+Warp: Transpile BigInt operations.;N/A
+Consider moving pointer lock code to its own class;N/A
+Simplify tracing by removing the special case for tenuring in TraceEdgeInternal;N/A
+Validate FOG vs Firefox Telemetry client_ids;N/A
+Use nsIWorkerDebugger.windowIds instead of nsIWorkerDebugger.window.windowGlobalChild.innerWindowId in DevToolsWorkerChild;N/A
+Use Span for BaseCompilationStencil.bigIntData;N/A
+Use Span for BaseCompilationStencil.objLiteralData;N/A
+Optimize XDRImmutableScriptData;N/A
+Servo changes to support @page rule size attribute;N/A
+Update neqo to 0.4.21;N/A
+jsshell `runOffThreadScript` should not wait for GC if not required;N/A
+Rename wasFunctionEmitted to something clearer;N/A
+Rename 'PDMFactoryImpl' in order to better reflect what it's actually doing.;N/A
+Clearly separate regular standalone function and event listener;N/A
+Clarify the relation between CompilationInput.enclosingScope and CompilationState parameter;N/A
+Remove obsolete comment about stencil merge;N/A
+Support large array buffers in the JITs;N/A
+Get rid of nsMsgPrintEngine.cpp, handle printing in msgPrintEngine.js;N/A
+Consider to add signal to addEventListener;N/A
+Intermittent Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Expected scroll metadata to be available!), at /builds/worker/checkouts/gecko/gfx/layers/wr/ClipManager.cpp:284;N/A
+Crash [@ js::Nursery::enterZealMode];N/A
+Establish Migration from Telemetry to FOG as a Platform Initiative;N/A
+WebRequest.jsm should not await onSendHeaders event dispatch;N/A
+host permissions or <all_urls> permission should grant access to privileged parts of the tabs API;N/A
+Migrate GeckoViewSettingsChild.js to actor;N/A
+Use TaggedParserAtomIndex everywhere and remove ParserAtomEntry::index_ field;N/A
+Add telemetry probe to know the status of decode error;N/A
+Don't emit unreachable code in convertValueToInt and remove Compare_Unknown;N/A
+Refactor AbstractScopePtr not to hold Scope pointer;N/A
+Remove or update probes expiring in Firefox 88: MEDIA_MKV_CANPLAY_REQUESTED;N/A
+More typed array changes for large buffers;N/A
+Gather stencil-related function/method definitions to Stencil.cpp;N/A
+Support strings as data in ClipboardItem;N/A
+Remove XUL decks from toolkit/mozapps/extensions/content/extensions.xhtml;N/A
+[meta] autorelease pool leaks;N/A
+Enable <link rel=preload> support by default;N/A
+enable osclientcerts by default in nightly;N/A
+Enable AVIF support by default;N/A
+Disable large-buffers jit-tests on TSan builds;N/A
+Don't unconditionally box BigInts for MTest and MNot;N/A
+Check for large ArrayBuffers or views in WebIDL bindings;N/A
+Consider removing the padding special-case for <input type=number>;N/A
+Send encrypted DNS queries to ODoH proxy;N/A
+Update mp4parse-rust to commit 3011a2;N/A
+Remove popup opening tokens (replacing them by user activation consumption).;N/A
+Implement telemetry probes to determine the best possible threshold for <lazyload>;N/A
+"Remove expired Scalars `telemetry.profile_directory_scans` and `telemetry.profile_directory_scan_date` and Histogram ""PROFILE_DIRECTORY_FILE_AGE""";N/A
+Check for commutative operator in x86shared::visitBinarySimd128 can't work;N/A
+Vendor in CL a25399760e9f12b679aa267dd2af7cfedc72bb71;N/A
+Refactor GC statistics in preparation for concurrent marking;N/A
+Enable Webrender on release for Mali-G gpus;N/A
+Cannot test `Home`, `End`, `PageDown`, `PageUp` etc, on Linux and macOS;N/A
+Reduce complexity of session restore with SHIP;N/A
+Add a code path for batched texture uploads via glTexImage2D;N/A
+we want to fallback to TCP faster when Http3 with 0rtt is used;N/A
+Extend probe expiring in Firefox 82: WINDOW_REMOTE_SUBFRAMES_ENABLED_STATUS;N/A
+Instrument IO Errors and inconsistencies in ClientID.jsm;N/A
+Explore combining the various printer capability methods on nsIPrinter into one method.;N/A
+Use clearer name for WellKnownParserAtoms_ROM and StaticStrings constants;N/A
+Properly use CompilationState storage while building up stencil vectors;N/A
+"Add ""MIR optimizations from a thousand feet"" to source-docs";N/A
+Implement C++ API for FOG;N/A
+[meta] [Decoder Doctor] Provide codec problem notification UI/SUMO help when video playback fails due to Windows Media Foundation being broken;N/A
+Land follow-up patches from bug 1685925;N/A
+Optimize object literal instantiation;N/A
+Constant fold SIMD binary operations;N/A
+Reject javascript: requests targeting other content processes;N/A
+Update Platform Print Settings To Handle Duplex Printing Options (None/FlipOnSideEdge/FlipOnTopEdge);N/A
+Unlock fission.autostart pref on Beta and DevEdition;N/A
+Make nsCheckboxRadioFrame::GetUsableScreenRect a static function for its only consumer;N/A
+Move `browser_decoderDoctor.js` to `dom/media/doctor`;N/A
+Assertion failure: false (chunksToDecommit().append(chunk)), at gc/Nursery.cpp:152;N/A
+Assertion failure: isIdle(), at gc/Nursery.cpp:144 with gczeal;N/A
+Enable non-native theme on Linux Nightly.;N/A
+nsIContentViewer::emulatePrefersColorScheme should be forward to children remote iframes;N/A
