@@ -5,7 +5,7 @@
 
 ## Data Fitting
 ### Retrieving Data
-The data was gathered [here](https://bugzilla.mozilla.org/query.cgi?format=advanced) with the following settings:
+The data was gathered from [Bugzilla](https://bugzilla.mozilla.org/query.cgi?format=advanced) with the following settings:
 
 ![Settings](Docs/Images/Settings.JPG)
 
@@ -38,8 +38,8 @@ The amount of data items found per type* was according to the following table:
 | normal | 2000 | 200 | 10000 |
 | minor | 2000 | 200 | 10000 |
 | trivial | 2000 | 200 | 6730 |
-| enhancement | 40 | 5 | 45 |
-| N/A | 1000 | 200 | 1509 |
+| enhancement | - | - | 45 |
+| N/A | - | - | 1509 |
 | Total | 13045 | 1406 | 50616 |
 
 (* All lists were retrieved on 2020-12-03. List "blocker" was renewed on 2021-01-27)
