@@ -113,7 +113,7 @@ The following accuracy scores were reached:
 | Classifier | Accuracy Score |
 | ----- | ----- |
 | Naïve Bayes | 0.466 |
-| SGD | 0.473 |
+| SGD | 0.455 |
 
 The following relative confusion matrices were received:
 
