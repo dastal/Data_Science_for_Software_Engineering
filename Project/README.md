@@ -115,7 +115,7 @@ The following accuracy scores were reached:
 | Naïve Bayes | 0.466 |
 | SGD | 0.473 |
 
-The following relaitve confusion matrices were received:
+The following relative confusion matrices were received:
 
 
 Naïve Bayes
