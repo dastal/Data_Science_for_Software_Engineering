@@ -46,7 +46,7 @@ The amount of data items found per type* was according to the following table:
 | trivial | 2000 | 200 | 6730 |
 | enhancement | - | - | 45 |
 | N/A | - | - | 1509 |
-| Total | 13045 | 1406 | 50616 |
+| Total | 12000 | 1200 | 49062 |
 
 (* All lists were retrieved on 2020-12-03. List "blocker" was renewed on 2021-01-27)
 
