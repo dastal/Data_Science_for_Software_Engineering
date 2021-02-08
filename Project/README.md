@@ -119,8 +119,7 @@ The following relative confusion matrices were received:
 
 
 Naïve Bayes
-![NB](Docs/Images/norm_conf_matrix_nb.png =250x250)
-
+<img src="Docs/Images/norm_conf_matrix_nb.png" alt="drawing" width="200"/>
 
 SGD
-![SGD](Docs/Images/norm_conf_matrix_sgd.png)
+<img src="Docs/Images/norm_conf_matrix_sgd.png" alt="drawing" width="200"/>
