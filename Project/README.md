@@ -70,6 +70,8 @@ The data was prepared as follows:
 -	We dropped rows with missing values or label to avoid false entries. This resulted in a training set with a total of 11962 samples and a testing set with a total of 1999 samples. 
 -	We removed special characters
 
+![Labels](Images/labels.JPG)
+
 ### Pre-Processing of Bug Summary
 -	Pipeline which transformed the words into ngrams ranging from (1,1) to (1,3)
 -	Further features were transformed into the tfidf measure reflecting the importance of a word
