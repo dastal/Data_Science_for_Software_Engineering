@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.18)  17 NOV 2020 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.18)  8 FEB 2021 17:32
 entering extended mode
 **./sample-sigconf.tex
 (sample-sigconf.tex
@@ -729,9 +729,9 @@ nuxLibertineT-TLF.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 2998.
 )
-Class acmart Info: Suppressing bibformat on input line 3.
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 21.
+Class acmart Info: Suppressing bibformat on input line 6.
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 24.
 
 \c@theorem=\count133
 
@@ -743,93 +743,93 @@ Include comment 'screenonly' Excluding comment 'printonly'
 Include comment 'anonsuppress' (sample-sigconf.aux)
 \openout1 = `sample-sigconf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 21.
-LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 21
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 24.
+LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 24
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\omlnxlmi.fd"
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 21.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 24.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\untxexa.fd"
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 21
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 24
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\lmsntxsy.fd"
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 24.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 2
-1.
+4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\lmxntxexx.fd"
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 24.
 <<ot1.cmap>>
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 21.
+(Font)              size <5> substituted on input line 24.
 
 <<oml.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 21.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 24.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\untxmia.fd"
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 21.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 24.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\untxsym.fd"
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 21.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 24.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\newtx\untxsyc.fd"
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Info: Redefining \microtypecontext on input line 21.
+LaTeX Info: Redefining \microtypecontext on input line 24.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -846,7 +846,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 21.
+Package hyperref Info: Link coloring ON on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -856,9 +856,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (sample-sigconf.out) (sample-sigconf.out)
 \@outlinefile=\write5
@@ -941,26 +941,26 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 77.
+(Font)              scaled to size 17.28pt on input line 80.
 LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
-nput line 77.
+nput line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd"
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 77.
+(Font)              scaled to size 17.28pt on input line 80.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 77.
+(Font)              scaled to size 17.28pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 77.
+(Font)              scaled to size 12.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 77.
+(Font)              scaled to size 10.0pt on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg"
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -973,32 +973,81 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 77.
+(Font)              scaled to size 9.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 77.
+(Font)              scaled to size 10.95pt on input line 80.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 104.
+ [1.1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 130.
+See the caption package documentation for explanation.
+
+<./Images/norm_conf_matrix_nb.png, id=73, 1918.16624pt x 1923.185pt>
+File: ./Images/norm_conf_matrix_nb.png Graphic file (type png)
+<use ./Images/norm_conf_matrix_nb.png>
+Package pdftex.def Info: ./Images/norm_conf_matrix_nb.png  used on input line 1
+50.
+(pdftex.def)             Requested size: 191.82787pt x 192.32976pt.
+
+Class acmart Warning: A possible image without description on input line 152.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Images/norm_conf_matrix_sgd.png, id=75, 1918.16624pt x 1923.185pt>
+File: ./Images/norm_conf_matrix_sgd.png Graphic file (type png)
+<use ./Images/norm_conf_matrix_sgd.png>
+Package pdftex.def Info: ./Images/norm_conf_matrix_sgd.png  used on input line 
+157.
+(pdftex.def)             Requested size: 191.82787pt x 192.32976pt.
+
+Class acmart Warning: A possible image without description on input line 159.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 (sample-sigconf.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 47.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 53.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 53.
+ [2.2 <./Images/norm_conf_matrix_nb.png> <./Images/norm_conf_matrix_sgd.png>]
 LaTeX Info: Redefining \tempurl on input line 65.
 LaTeX Info: Redefining \tempurl on input line 80.
 LaTeX Info: Redefining \tempurl on input line 94.
 LaTeX Info: Redefining \tempurl on input line 108.
 )
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+Class acmart Warning: Some images may lack descriptions.
 
-[1.1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+Class acmart Warning: ACM keywords are mandatory for papers over two pages.
+
+
+Class acmart Warning: ACM reference format is mandatory for papers over one pag
+e.
+
+
+Class acmart Warning: CCS concepts are mandatory for papers over two pages.
+
+
+Overfull \vbox (1.41599pt too high) has occurred while \output is active []
+
+
+[3.3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
  (sample-sigconf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
 Package rerunfilecheck Info: File `sample-sigconf.out' has not changed.
-(rerunfilecheck)             Checksum: 011D8F4209B428AD7F1C2396B66DD2DA;297.
+(rerunfilecheck)             Checksum: 4D8FC5C5BB2C5A7DEE72A32EF48CE918;814.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1006,25 +1055,26 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18245 strings out of 493308
- 273626 string characters out of 3138768
- 404037 words of memory out of 3000000
- 21183 multiletter control sequences out of 15000+200000
- 80940 words of font info for 150 fonts, out of 3000000 for 9000
+ 18350 strings out of 493308
+ 275949 string characters out of 3138768
+ 405524 words of memory out of 3000000
+ 21212 multiletter control sequences out of 15000+200000
+ 101628 words of font info for 189 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,937b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Pr
-ogram Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Program Fi
-les/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{C:/Program Files/MiKT
-eX 2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}<C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/libertine/LinBiolinumTB.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/libertine/LinLibertineT.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/libertine/LinLibertineTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/libertine/LinLibertineTI.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/newtx/txsys.pfb>
-Output written on sample-sigconf.pdf (1 page, 311249 bytes).
+ 60i,11n,94p,1178b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Pr
+ogram Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Program Fi
+les/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}<C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/libertine/LinBiolinumT.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/libertine/LinBiolinumTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/libertine/LinLibertineT.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/libertine/LinLibertineTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/libertine/LinLibertineTI.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/newtx/txsys.pfb>
+Output written on sample-sigconf.pdf (3 pages, 545858 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 21545 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 31827 words of extra memory for PDF output out of 35830 (max. 10000000)
 

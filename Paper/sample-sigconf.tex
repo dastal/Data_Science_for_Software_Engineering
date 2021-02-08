@@ -1,5 +1,8 @@
 \documentclass[sigconf,screen]{acmart}
 
+\usepackage{graphicx}
+\graphicspath{ {./Images/} }
+
 \settopmatter{printacmref=false} % Removes citation information below abstract
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
 \pagestyle{plain} % removes running headers
@@ -54,20 +57,20 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Trovato, Tobin, B\'eranger}
+\renewcommand{\shortauthors}{Andrina Vincenz, David Stalder}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-
-\textbf{Background.} Bug fixing is a fundamental part of software maintenance. Bugs have different levels of severity according to their threat to the system and urgency to fixing.
-
-\textbf{Aim.} The aim is to have models which are able to identify the severity of bug reports.
-
-\textbf{Method.} After identifying the system, bug reports will be extracted from bugzilla including the severity of the bug. This data is used to train two classifiers: SGDClassifier and Multinomial Na{\"\i}ve Bayes. The following measurements are used to identify the quality of the model: precision, recall and f-measures.
-
-\textbf{Conclusion.} This study will show if it is possible to generate models, which can do the classification of bug reports automatically with certainty. This can help software engineers in practice to classify their bug reports and focus on the most urgent.
+	
+	\textbf{Background.} Bug fixing is a fundamental part of software maintenance. Bugs have different levels of severity according to their threat to the system and urgency to fixing.
+	
+	\textbf{Aim.} The aim is to have models which are able to identify the severity of bug reports.
+	
+	\textbf{Method.} After identifying the system, bug reports will be extracted from bugzilla including the severity of the bug. This data is used to train two classifiers: SGDClassifier and Multinomial Na{\"\i}ve Bayes. The following measurements are used to identify the quality of the model: precision, recall and f-measures.
+	
+	\textbf{Conclusion.} This study will show if it is possible to generate models, which can do the classification of bug reports automatically with certainty. This can help software engineers in practice to classify their bug reports and focus on the most urgent.
 \end{abstract}
 
 
@@ -88,14 +91,79 @@ For this project, we intend to conduct a reproduction of the paper "Predicting t
 The research goal of this paper was to test if it is possible to predict the severity of a reported bug by analysing its textual description by using a text mining algorithm. They came up with subsidiary research questions which need to be included to find an explanation of their research goal.
 
 \begin{itemize}
-\item Concerning potential indicators of the severity of a bug, the first research question was: "Which terms in the textual descriptions of a bug report could serve as good indicators of the severity?" \cite{ourPaper}
-
-\item Concerning the length of a bug report, the second research question was: "Which (text) fields in the bug reports serve as the best prediction basis? The one-line summary which briefly focusses on the problem or the longer full description which includes more detail?" \cite{ourPaper}
-
-\item Concerning the scope of the training period, their third research question was: "How many samples must be collected before one can make a reliable predictor?" \cite{ourPaper}
+	\item Concerning the length of a bug report, the research question was: "Which (text) fields in the bug reports serve as the best prediction basis? The one-line summary which briefly focusses on the problem or the longer full description which includes more detail?" \cite{ourPaper}
+	
+	\item Concerning the scope of the training period, their research question was: "How many samples must be collected before one can make a reliable predictor?" \cite{ourPaper}
+	
+	\item Concerning the components their research question was: "Is it better to have a specialized predictor for each component of the software system, or can we combine bug reports over different software components (the so-called "cross- component" approach)?" \cite{ourPaper}
 \end{itemize}
 
-The structure of the paper is as follows. In the second section "Background" we explain all the necessary background knowledge on bug triaging and text mining. In the third section "Case Study" we first explain the approach step by step, then we present the measures we use to process and evaluate the data and finally we present the results. In the fourth Section "Subsidiary Research Questions" we answer step by step the subsidiary research questions. In the fifth section "Threats to Validity", we need to identify factors that could threaten our results and the measures we take to minimize the risk of bad results. In the sixth section "Related Work" we discuss related work of other researchers and their findings to compare it with our findings. Finally, in the seventh section "Conclusion and Future Work" we summarize all our findings and mention future work to be done in conjunction with our research.
+At the end of the paper they already analysed those research questions. However, we will base our work on the findings which were made by them as follows:
+
+\begin{itemize}
+	\item \textit{Short vs. Long}: They found that there is no difference in the prediction basis between the one-line summary and the full description \cite{ourPaper}. To have a smaller set of samples and to make the procedure as efficient as possible, we decided to use only the one-line summary.
+	
+	\item \textit{Training Period}: They found that there is nearly no difference in the reliability of the predictor by taking 500, 1000 or 2000 samples \cite{ourPaper}. To be sure that our findings will be as precise as possible, we decided to take 2000 samples.
+	
+	\item \textit{Per Component vs. Cross Component}: They found that using the cross-component approach the performance improves with an increasing number of samples \cite{ourPaper}. Therefore we decided to use the cross-component approach, since we are already using 2000 samples.
+\end{itemize}
+
+The structure of the paper is as follows. In the second section "Methodology" we focus on how we conducted our research and explain every step of the work. In the third section "Results" we present our findings, in the fourth section "Discussion" we discuss and interpret the findings, in the fifth section "Limitations and Further Work" we explain how our work was limited, what could be done in a different way and what could be done as future work to be done in conjunction with our research using our findings.
+
+\section{Methodology}
+In a first step we downloaded the necessary data from Bugzilla tracking system with bugs regarding the case Firefox. In our approach only one case was selected. Since we choose the cross-component approach all components were selected. To make the analysis clearer, the only resolution type chosen is fixed. This is because fixed bugs were worked on and therefor the label more certain. There are eight types of severities: blocker, critical, major, normal, minor, trivial, enhancement and N/A. The categories enhancement and N/A were dropped, N/A since this label has no meaning regarding the problem statement and enhancement because this class is imbalanced with only 45 entries in total as well as these are user requests for features. In contrast to the original paper we decided to run the models on all severities as labels to find out whether we get a similar accuracy or worse. To make the training and test step more coherent, the test and training set were downloaded separately. The test set contains each 2000 entries for each severity resulting in 12000 entries. For the test set we have 200 entries per severity with 1200 entries in total.
+
+After downloading the data, our approach consists of the following steps.
+
+\begin{enumerate}
+	\item \textit{Preprocess bug reports}: Afterwards the data was imported into a Jupyter Notebook. The data was further preprocessed by dropping rows with missing values or labels resulting in a training set with 11962 entries and a test set with 1999 entries. Further the punctuation and special characters were removed from the bug summary. For the preprocessing of the bug summary a pipeline was used transforming the words into ngramms ranging from (1,1) to (1,3). Further the features were transformed into the tfidf measure reflecting the importance of a word in a document. The label encoding was done with the method LabelEncoder() from sklearn.
+	\item \textit{Training the classifiers}: With the training set two different classifiers were trained. First the NB and SGD classifier were trained without any parameter optimization. To measure the accuracy of each model we used the following scores: precision, recall and f-measures. The calculation of the measurements was done via cross validation. Parameter optimization for both classifiers was achieved with Grid Search. For Na{\"\i}ve Bayes only ngramm optimization was performed. For the SGD classifier the following parameters additionally were optimized: loss function, regularization, and early stopping. The grid search resulted in a best model for each classifier.
+	\item \textit{Applying classifiers on test set} To calculate the accuracy of each classifier the best model was run with the test set and the results visualized with a normalized confusion matrix. 
+	
+\end{enumerate}
+
+\section{Results}
+Table \ref{tab:title} shows the precision, the recall, and the f1-score of the two selected classifiers using the data samples from Mozilla.
+
+\begin{center}
+	\centering
+	\captionof{table}{Scores of the two Classifiers}
+	\label{tab:title} 
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		\textbf{Classifier} & \textbf{Precision} & \textbf{Recall} & \textbf{f1} \\
+		\hline
+		Na{\"\i}ve Bayes & 0.402 & 0.402 & 0.402 \\
+		\hline
+		SGD & 0.405 & 0.405 & 0.405 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+Table \ref{tab:title} shows that the results of the two different classifiers are nearly the same, whereas the precision, the recall and the f1-score are nearly identical and varying between 0.40-0.45.
+
+In the next step we used a grid-search for finding the best model of both classifiers. Figure \ref{fig:confMatNB} is the normalized confusion matrix of the best Na{\"\i}ve Bayes model which has an accuracy score of 0.466,  Figure \ref{fig:confMatSGD} is the normalized confusion matrix of the best SGD model which has an accuracy score of 0.473.
+
+\begin{figure}[h]
+	\caption{Conusion Matrix of Na{\"\i}ve Bayes Model}
+	\centering
+	\includegraphics[scale=0.1]{norm_conf_matrix_nb}
+	\label{fig:confMatNB}	
+\end{figure}
+
+\begin{figure}[h]
+	\caption{Conusion Matrix of SGD Model}
+	\centering
+	\includegraphics[scale=0.1]{norm_conf_matrix_sgd}
+	\label{fig:confMatSGD}	
+\end{figure}
+
+
+\section{Discussion}
+This approach shows that classifying bugs according to their severity with linear classifiers only works to a certain point. Only two labels were classified with a higher accuracy than 50\%, namely trivial and critical. The reason for this could be that the bug summaries over all components have too similar words to be able to classify them correctly. In this case there is no better solution available with linear models except for larger ngramms. Is this not the case, larger test and trainings files could lead to a higher accuracy for this approach. Compared to the paper \cite{ourPaper} with the same amount of test data for the non-component approach it shows that classifying the bug severity further into two categories leads to a higher accuracy. Training another linear classifier leads to no improvement in accuracy and to similar measurements.
+
+\section{Limitations and Further Work}
+
 
 
 
