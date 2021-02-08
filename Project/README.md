@@ -123,4 +123,4 @@ Naïve Bayes
 
 
 SGD
-![SGD](Docs/norm_conf_matrix_sgd.png)
+![SGD](Docs/Images/norm_conf_matrix_sgd.png)
