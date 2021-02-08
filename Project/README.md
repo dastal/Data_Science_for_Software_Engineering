@@ -1,6 +1,7 @@
 # Project for Seminar: Data Science in for Software Engineering
 
 ## Purpose
+With this work we intend to do a reproduction of the paper “Predicting the Severity of a Reported Bug” by Lamkanfi et al. Find the paper [here](https://doi.org/10.1109/MSR.2010.5463284).
 
 
 ## Data Fitting
