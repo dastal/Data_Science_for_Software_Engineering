@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -63,6 +63,20 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1109/MSR.2010.5463284}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{C.~Goutte}{C.~Goutte}{2005}]%
+        {scoreExplanation}
+\bibfield{author}{\bibinfo{person}{E.~Gaussier C.~Goutte}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{A Probabilistic Interpretation of Precision, Recall
+  and F-Score, with Implication for Evaluation}.
+\newblock \bibinfo{journal}{\emph{Advances in Information Retrieval}}
+  (\bibinfo{year}{2005}), \bibinfo{pages}{345--359}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-540-31865-1_25}
 \showDOI{\tempurl}
 
 

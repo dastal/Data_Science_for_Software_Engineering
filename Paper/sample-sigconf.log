@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.18)  8 FEB 2021 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.18)  8 FEB 2021 20:43
 entering extended mode
 **./sample-sigconf.tex
 (sample-sigconf.tex
@@ -981,47 +981,47 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
  [1.1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 130.
+(caption)                particular \caption on input line 134.
 See the caption package documentation for explanation.
 
-<./Images/norm_conf_matrix_nb.png, id=73, 1918.16624pt x 1923.185pt>
+<./Images/norm_conf_matrix_nb.png, id=68, 1918.16624pt x 1923.185pt>
 File: ./Images/norm_conf_matrix_nb.png Graphic file (type png)
 <use ./Images/norm_conf_matrix_nb.png>
 Package pdftex.def Info: ./Images/norm_conf_matrix_nb.png  used on input line 1
-50.
+52.
 (pdftex.def)             Requested size: 191.82787pt x 192.32976pt.
 
-Class acmart Warning: A possible image without description on input line 152.
+Class acmart Warning: A possible image without description on input line 154.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Images/norm_conf_matrix_sgd.png, id=75, 1918.16624pt x 1923.185pt>
+<./Images/norm_conf_matrix_sgd.png, id=71, 1918.16624pt x 1923.185pt>
 File: ./Images/norm_conf_matrix_sgd.png Graphic file (type png)
 <use ./Images/norm_conf_matrix_sgd.png>
 Package pdftex.def Info: ./Images/norm_conf_matrix_sgd.png  used on input line 
-157.
+161.
 (pdftex.def)             Requested size: 191.82787pt x 192.32976pt.
 
-Class acmart Warning: A possible image without description on input line 159.
+Class acmart Warning: A possible image without description on input line 163.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(sample-sigconf.bbl
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 172.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 172.
+[2.2 <./Images/norm_conf_matrix_nb.png>] (sample-sigconf.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 47.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 53.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 53.
- [2.2 <./Images/norm_conf_matrix_nb.png> <./Images/norm_conf_matrix_sgd.png>]
 LaTeX Info: Redefining \tempurl on input line 65.
-LaTeX Info: Redefining \tempurl on input line 80.
+LaTeX Info: Redefining \tempurl on input line 79.
 LaTeX Info: Redefining \tempurl on input line 94.
 LaTeX Info: Redefining \tempurl on input line 108.
+LaTeX Info: Redefining \tempurl on input line 122.
 )
 
 Class acmart Warning: Some images may lack descriptions.
@@ -1036,18 +1036,14 @@ e.
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Overfull \vbox (1.41599pt too high) has occurred while \output is active []
-
-
-[3.3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+[3.3 <./Images/norm_conf_matrix_sgd.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (sample-sigconf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `sample-sigconf.out' has not changed.
-(rerunfilecheck)             Checksum: 4D8FC5C5BB2C5A7DEE72A32EF48CE918;814.
+(rerunfilecheck)             Checksum: C4644126C2008A2BEDBA453E6A58A399;694.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1055,26 +1051,30 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18350 strings out of 493308
- 275949 string characters out of 3138768
- 405524 words of memory out of 3000000
- 21212 multiletter control sequences out of 15000+200000
- 101628 words of font info for 189 fonts, out of 3000000 for 9000
+ 18386 strings out of 493308
+ 276456 string characters out of 3138768
+ 409714 words of memory out of 3000000
+ 21217 multiletter control sequences out of 15000+200000
+ 108429 words of font info for 214 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,1178b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Pr
-ogram Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Program Fi
-les/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Program Files/MiKT
-eX 2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}<C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/libertine/LinBiolinumT.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/libertine/LinBiolinumTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/libertine/LinLibertineT.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/libertine/LinLibertineTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/libertine/LinLibertineTI.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/newtx/txsys.pfb>
-Output written on sample-sigconf.pdf (3 pages, 545858 bytes).
+ 60i,11n,94p,1178b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Program Files/MiKTeX 2.9
+/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/libertine/lbtn_nh77jq.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
+/libertine/lbtn_76gpa5.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/libe
+rtine/LinBiolinumT.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/libertin
+e/LinBiolinumTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/libertine/L
+inLibertineT.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/libertine/LinL
+ibertineTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/libertine/LinLib
+ertineTI.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/newtx/zxlri.pfb>
+Output written on sample-sigconf.pdf (3 pages, 582623 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 31827 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 31819 words of extra memory for PDF output out of 35830 (max. 10000000)
 
