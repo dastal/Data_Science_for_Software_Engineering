@@ -99,5 +99,26 @@ Optimization for SGD
 To calculate the accuracy of each classifier the best model was run with the test set and the results visualized with a normalized confusion matrix. 
 
 ## Results
+The following scores were reached:
 
-## Limitations
+| Classifier | Precsision | Recall | f1 |
+| ----- | ----- | ----- | ----- |
+| Naïve Bayes | 0.402 | 0.402 | 0.402 |
+| SGD | 0.405 | 0.405 | 0.405 |
+
+The following accuracy scores were reached:
+
+| Classifier | Accuracy Score |
+| ----- | ----- |
+| Naïve Bayes | 0.466 |
+| SGD | 0.473 |
+
+The following relaitve confusion matrices were received:
+
+
+Naïve Bayes
+![NB](Images/norm_conf_matrix_nb.png)
+
+
+SGD
+![SGD](Images/norm_conf_matrix_sgd.png)
