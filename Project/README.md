@@ -70,7 +70,7 @@ The data was prepared as follows:
 -	We dropped rows with missing values or label to avoid false entries. This resulted in a training set with a total of 11962 samples and a testing set with a total of 1999 samples. 
 -	We removed special characters
 
-![Labels](Images/labels.JPG)
+![Labels](Docs/Images/labels.JPG)
 
 ### Pre-Processing of Bug Summary
 -	Pipeline which transformed the words into ngrams ranging from (1,1) to (1,3)
@@ -119,8 +119,8 @@ The following relaitve confusion matrices were received:
 
 
 Naïve Bayes
-![NB](Images/norm_conf_matrix_nb.png)
+![NB](Docs/Images/norm_conf_matrix_nb.png)
 
 
 SGD
-![SGD](Images/norm_conf_matrix_sgd.png)
+![SGD](Docs/norm_conf_matrix_sgd.png)
