@@ -117,6 +117,15 @@ The following accuracy scores were reached:
 
 The following relative confusion matrices were received:
 
-<img src="Docs/Images/norm_conf_matrix_nb.png" alt="drawing" width="200" title="Naïve Bayes"/>
+<figure class="image">
+  <img src="Docs/Images/norm_conf_matrix_nb.png" alt="drawing" width="200"/>
+  <figcaption>Naïve Bayes</figcaption>
+</figure>
 
-<img src="Docs/Images/norm_conf_matrix_sgd.png" alt="drawing" width="200" title="SGD"/>
+
+
+<figure class="image">
+  <img src="Docs/Images/norm_conf_matrix_sgd.png" alt="drawing" width="200"/>
+  <figcaption>SGD</figcaption>
+</figure>
+
