@@ -65,6 +65,38 @@ The data was prepared as follows:
 | bug_list.csv | List with data for the initial test to see if the project is feasible. |
 
 ## Execution
+### Further Pre-Processing
+-	The Data was imported into a Jupyter Notebook
+-	We dropped rows with missing values or label to avoid false entries. This resulted in a training set with a total of 11962 samples and a testing set with a total of 1999 samples. 
+-	We removed special characters
+
+### Pre-Processing of Bug Summary
+-	Pipeline which transformed the words into ngrams ranging from (1,1) to (1,3)
+-	Further features were transformed into the tfidf measure reflecting the importance of a word
+-	The label encoding was done with the method LabelEncoder()
+
+### Training the Classifiers
+Two different classifiers were used without any parameter optimization:
+-	Naïve Bayes
+-	SGD
+
+To measure the accuracy of each model, we used the following scores
+-	Precision
+-	Recall
+-	f1
+
+To calculate the measurements we used cross validation.  The parameter optimization for both classifiers was achieved with Grid Search:
+
+Optimizations for Naïve Bayes:
+-	ngramm
+
+Optimization for SGD
+-	Loss function
+-	Regularization
+-	Early Stopping
+
+### Applying the Classifiers to the Test Set
+To calculate the accuracy of each classifier the best model was run with the test set and the results visualized with a normalized confusion matrix. 
 
 ## Results
 
