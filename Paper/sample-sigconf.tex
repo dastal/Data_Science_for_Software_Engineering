@@ -110,10 +110,10 @@ At the end of the paper they already analysed those research questions. However,
 
 The structure of the paper is as follows. In the second section "Methodology" we focus on how we conducted our research and explain every step of the work. In the third section "Results" we present our findings, in the fourth section "Discussion and Limitations" we discuss and interpret the findings and name the limitations of our research.
 
-We conducted the procedure as follows: First we downloaded and processed the data such that we could use it for the further procedure. For each of the six severity types we chose 2000 entries for the training list and 200 entries for the testing list. In the next step we trained the two models (Na{\"\i}ve Bayes and SGD). For measuring purposes we used the scores precision, recall and f1. The parameter optimization was achieved using grid search. In the last step the classifiers were applied on the test set. Our experimental results for the Na{\"\i}ve Bayes were 0.402 for all the scores (precision, recall and f1), for the SGD the experimental results for all the scores were  0.405. Finally, the severity types "trivial" and "critical" had with both methods an accuracy of over 60\% and all the other types had an accuracy of between 30-45\%.
+We conducted the procedure as follows: First we downloaded and processed the data such that we could use it for the further procedure. For each of the six severity types we chose 2000 entries for the training list and 200 entries for the testing list. In the next step we trained the two models (Na{\"\i}ve Bayes and SGD). For measuring purposes we used the scores precision, recall and f1, the parameter optimization was achieved using grid search. In the last step the classifiers were applied on the test set. Our experimental results for the Na{\"\i}ve Bayes were 0.402 for all the scores (precision, recall and f1), for the SGD the experimental results for all the scores were  0.405. Finally, the severity types "trivial" and "critical" had with both methods an accuracy of over 60\% and all the other types had an accuracy of between 30-45\%.
 
 \section{Methodology}
-In a first step we downloaded the necessary data from Bugzilla tracking system with bugs regarding the case Firefox. In our approach only one case was selected. Since we choose the cross-component approach all components were selected. To make the analysis clearer, the only resolution type chosen is fixed. This is because fixed bugs were worked on and therefor the label more certain. There are eight types of severities: blocker, critical, major, normal, minor, trivial, enhancement and N/A. The categories enhancement and N/A were dropped, N/A since this label has no meaning regarding the problem statement and enhancement because this class is imbalanced with only 45 entries in total as well as these are user requests for features. In contrast to the original paper we decided to run the models on all severities as labels to find out whether we get a similar accuracy or worse. To make the training and test step more coherent, the test and training set were downloaded separately. The test set contains each 2000 entries for each severity resulting in 12000 entries. For the test set we have 200 entries per severity with 1200 entries in total.
+In a first step we downloaded the necessary data from Bugzilla tracking system with bugs regarding the case Firefox. In our approach only one case was selected. Since we choose the cross-component approach all components were selected. To make the analysis clearer, the only resolution type chosen is fixed. This is because fixed bugs were worked on and therefore the label more certain. There are eight types of severities: "blocker", "critical", "major", "normal", "minor", "trivial", "enhancement" and "N/A". The categories "enhancement" and "N/A" were dropped, "N/A" since this label has no meaning regarding the problem statement and "enhancement" because this class is imbalanced with only 45 entries in total as well as these are user requests for features. In contrast to the original paper we decided to run the models on all severities as labels to find out whether we get a similar accuracy or worse. To make the training and test step more coherent, the test and training set were downloaded separately. The test set contains each 2000 entries for each severity resulting in 12000 entries. For the test set we have 200 entries per severity with 1200 entries in total.
 
 After downloading the data, our approach consists of the following steps.
 
@@ -123,6 +123,8 @@ After downloading the data, our approach consists of the following steps.
 	\item \textit{Applying classifiers on test set} To calculate the accuracy of each classifier the best model was run with the test set and the results visualized with a normalized confusion matrix. 
 	
 \end{enumerate}
+
+The whole procedure can be found on our GitHub repository \cite{ourRepo}
 
 \section{Results}
 Table \ref{tab:title} shows the precision, the recall, and the f1-score of the two selected classifiers using the data samples from Mozilla.
@@ -144,7 +146,7 @@ The results of the two different classifiers are nearly the same, whereas the pr
 	\end{tabular}
 \end{center}
 
-In the next step we used a grid-search for finding the best model of both classifiers. Figure \ref{fig:confMatNB} is the normalized confusion matrix of the best Na{\"\i}ve Bayes model which has an accuracy score of 0.466,  Figure \ref{fig:confMatSGD} is the normalized confusion matrix of the best SGD model which has an accuracy score of 0.455.
+In the next step we used a grid-search for finding the best model of both classifiers. Figure \ref{fig:confMatNB} is the normalized relative confusion matrix of the best Na{\"\i}ve Bayes model which has an accuracy score of 0.466,  Figure \ref{fig:confMatSGD} is the normalized relative confusion matrix of the best SGD model which has an accuracy score of 0.455.
 
 \begin{figure}[h]
 	\caption{Relative Confusion Matrix of Na{\"\i}ve Bayes Model}
@@ -153,7 +155,7 @@ In the next step we used a grid-search for finding the best model of both classi
 	\label{fig:confMatNB}	
 \end{figure}
 
-Table \ref{fig:confMatNB} shows the label "blocker" had an accuracy of 0.44, "critical"  0.6, "major" 0.39, "minor" 0.32, "normal" 0.35, and "trivial" 0.69.
+Figure \ref{fig:confMatNB} shows that in the Na{\"\i}ve Bayes model the label "blocker" had an accuracy of 0.44, "critical"  0.6, "major" 0.39, "minor" 0.32, "normal" 0.35, and "trivial" 0.69.
 
 \begin{figure}[h]
 	\caption{Relative Confusion Matrix of SGD Model}
@@ -162,11 +164,11 @@ Table \ref{fig:confMatNB} shows the label "blocker" had an accuracy of 0.44, "cr
 	\label{fig:confMatSGD}	
 \end{figure}
 
-Table \ref{fig:confMatSGD} shows the label "blocker" had an accuracy of 0.41, "critical"  0.62, "major" 0.36, "minor" 0.34, "normal" 0.37, and "trivial" 0.73.
+Figure \ref{fig:confMatSGD} shows that in the SGD model the label "blocker" had an accuracy of 0.41, "critical"  0.62, "major" 0.36, "minor" 0.34, "normal" 0.37, and "trivial" 0.73.
 
 
 \section{Discussion and Limitations}
-This approach shows that classifying bugs according to their severity with linear classifiers only works to a certain point. Only two labels were classified with a higher accuracy than 50\%, namely trivial and critical. The reason for this could be that the bug summaries over all components have too similar words to be able to classify them correctly. In this case there is no better solution available with linear models except for larger ngramms. Is this not the case, larger test and trainings files could lead to a higher accuracy for this approach. Compared to the paper \cite{ourPaper} with the same amount of test data for the non-component approach it shows that classifying the bug severity further into two categories leads to a higher accuracy. Training another linear classifier leads to no improvement in accuracy and to similar measurements.
+This approach shows that classifying bugs according to their severity with linear classifiers only works to a certain point. Only two labels were classified with a higher accuracy than 50\%, namely "trivial" and "critical". The reason for this could be that the bug summaries over all components have too similar words to be able to classify them correctly. In this case there is no better solution available with linear models except for larger ngramms. Is this not the case, larger test and trainings files could lead to a higher accuracy for this approach. Compared to the paper \cite{ourPaper} with the same amount of test data for the non-component approach it shows that classifying the bug severity further into two categories leads to a higher accuracy. Training another linear classifier leads to no improvement in accuracy and to similar measurements.
 
 As already mentioned in the section "Results", we observed that in both models the values for precision, recall and f1-score are nearly identical. To be able to find possible explanations, we first need to have a look at the formulae of each score \cite{scoreExplanation}. In the following formulae, TP means "true positive", FP means "false positive", and FN means "false negative".
 
@@ -188,7 +190,7 @@ f1:
 	\label{eq:f1}
 \end{equation}
 
-Since all numbers are nearly the same, in our case we seem to have fp=fn (see in Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1}), i.e. the number of false positives must be equal the number of false negatives. This can be interpreted as good, since our data set had an equal amount of each label.
+Since all numbers are nearly the same, in our case we seem to have fp=fn (see in Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1}), i.e. the number of false positives must be equal the number of false negatives which makes all equations equal. This can be interpreted as good, since our data set had an equal amount of each label.
 
 
 %%

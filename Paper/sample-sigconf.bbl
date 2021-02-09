@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -121,6 +121,20 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1109/ICSM.2013.31}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Vincenz and Stalder}{Vincenz and
+  Stalder}{2021}]%
+        {ourRepo}
+\bibfield{author}{\bibinfo{person}{Andrina Vincenz} {and}
+  \bibinfo{person}{David Stalder}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Project for Seminar: Data Science in for
+  Software Engineering}}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/dastal/Data_Science_for_Software_Engineering/tree/master/Project}
+\showURL{%
+Retrieved February 08, 2021 from \tempurl}
 
 
 \end{thebibliography}
