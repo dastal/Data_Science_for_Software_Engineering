@@ -4,8 +4,8 @@
 With this work we intend to do a reproduction of the paper “Predicting the Severity of a Reported Bug” by Lamkanfi et al. (Find the paper [here](https://doi.org/10.1109/MSR.2010.5463284)).
 The mission of this paper was finding out if it is possible to “accurately predict the severity of a reported bug using text mining algorithms”. We took the findings they made here and tried to reproduce this work, with some small differences:
 
--	They took their data samples from Mozilla, Eclipse, and GNOME, whereas we took our data samples from Mozilla.
--	They only made the difference between the severity types “non-severe” and “severe”, whereas we differentiated 6 different types of severity (“blocker”, “critical”, “major”, “normal”, “minor”, and “trivial”).
+-	They took their data samples from Mozilla, Eclipse, and GNOME, whereas we took our data samples only from Mozilla.
+-	They only made the difference between the severity types “non-severe” and “severe”, whereas we differentiated 6 different types of severites (“blocker”, “critical”, “major”, “normal”, “minor”, and “trivial”).
 -	Due to their findings, we decided to do only their “best solution”, i.e. we only conducted an experiment where we took the one-line summary of each bug, we only took sets of 2000 samples instead of 500, 1000, and 2000, and we only conducted a cross-component approach instead of the additional per-component approach.
 
 
